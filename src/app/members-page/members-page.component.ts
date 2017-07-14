@@ -28,4 +28,8 @@ export class MembersPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSelect(member: Member): void{
+    this.selectedMember = member;
+  }
+
 }
