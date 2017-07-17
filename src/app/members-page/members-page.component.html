@@ -3,7 +3,7 @@
     <li *ngFor="let member of members, index as i" (click)="onSelect(member)">
       <span>
         <div class="member-status" *ngIf="member.presence=='active'">
-          <img src="../../assets/online-logo.PNG" />
+          <img src="../../assets/online-logo.png" />
         </div>
         <img src="{{member.image}}" />
         <div class="member-name">
@@ -24,11 +24,11 @@
       </div>
     </div>
     <div class="member-online-background">
-      <img src="../../assets/online-logo.PNG" />
+      <img src="../../assets/online-logo.png" />
     </div>
     <button class="exit-button" type="button" (click)="removeSelected()">X</button>
     <div class="member-detail-white-box">
-      
+
     </div>
     <div class="member-info">
       {{selectedMember.email}}
