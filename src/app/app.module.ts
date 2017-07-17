@@ -20,12 +20,13 @@ import {ChannelDisplayComponent} from './channelboxes/channel-display.component'
 import { MessageBoxComponent } from './message-box/message-box.component';
 
 import { MembersPageComponent } from './members-page/members-page.component';
-import { MemberComponent } from './member/member.component';
-import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
 import {ChannelService} from './channel.service';
 import {HomeComponent} from './home.component';
+
+import { MessageListComponent } from './message-list/message-list.component';
+
 
 
 @NgModule({
@@ -34,13 +35,12 @@ import {HomeComponent} from './home.component';
     ServiceTestComponent,
     MessageBoxComponent,
     MembersPageComponent,
-    MemberComponent,
-    MemberDetailComponent,
     ChannelFeedComponent,
     ChannelsComponent,
     ChannelBoxComponent,
     ChannelDisplayComponent,
-    HomeComponent
+    HomeComponent,
+    MessageListComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +49,8 @@ import {HomeComponent} from './home.component';
     RouterModule.forRoot(appRoutes),
   ],
   providers: [
-    ChannelService
+    ChannelService,
+    SlackService
   ],
 
 
