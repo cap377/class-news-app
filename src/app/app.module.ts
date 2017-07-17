@@ -48,14 +48,9 @@ import {ChannelService} from './channel.service';
     RouterModule.forRoot(appRoutes),
   ],
   providers: [
-<<<<<<< HEAD
-  //  ChannelService,
-=======
     ChannelService,
-    MessageService,
     SlackService,
     DatePipe
->>>>>>> df9a385a770d2d98e6d2d3362bfd5ba4505f8556
   ],
 
 
