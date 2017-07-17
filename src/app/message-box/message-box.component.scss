@@ -4,7 +4,7 @@
 //   background-color: #94979A;
 // }
 
-.messageBoxTextDiv{
+.messageBoxTextDiv {
   width: 162px;
   height: 125px;
   color: white;
@@ -14,20 +14,81 @@
   text-align: center;
 }
 
-.messageBoxTimeDiv{
-  width:170px;
+.messageBoxDateDiv {
+  width: 170px;
   font-size: 20px;
   color: #818386;
   text-align: right;
-span{
-  color: #DB7676;
-  font-size: 14px;
-  vertical-align: top;
+
+  span {
+    color: #DB7676;
+    font-size:.60em;
+    vertical-align: top;
+  }
 }
+
+.messageBoxAuthorDiv {
+  @extend .messageBoxDateDiv;
 }
 
+.messageDetailsReactionDiv {
+  width: 480px;
+  height: 190px;
+  background-color: white;
+  color: #94979A;
+  border: solid lightgrey 1px;
+}
 
+.messageDetailsDateDiv {
+  color: #818386;
+  text-align: right;
+  width: 480px;
+  font-size: 36px;
 
-.messageBoxAuthorDiv{
-  @extend .messageBoxTimeDiv;
+  span {
+    color: #DB7676;
+    font-size:.60em;
+     vertical-align: top;
+  }
+}
+
+.messageDetailsAuthorDiv {
+  @extend .messageDetailsDateDiv;
+}
+
+.messageDetailsTextDiv {
+  font-size: 18px;
+  color: white;
+}
+
+.modal {
+  display: block;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+}
+
+.modalContent {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 530px;
+  height: 470px;
+  background-color: #525252;
+}
+
+.exit-button {
+  position: relative;
+  float: right;
+  top: 0;
 }

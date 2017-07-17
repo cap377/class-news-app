@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChannelService } from '../channel.service';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-channels',
