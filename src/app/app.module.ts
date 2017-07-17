@@ -14,7 +14,7 @@ import { MembersPageComponent } from './members-page/members-page.component';
 import { MemberComponent } from './member/member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 
-import { ChannelService } from './channel.service';
+// import { ChannelService } from './channel.service';
 
 @NgModule({
   declarations: [
@@ -24,15 +24,15 @@ import { ChannelService } from './channel.service';
     MembersPageComponent,
     MemberComponent,
     MemberDetailComponent,
-    ChannelFeedComponent,
-    ChannelsComponent
+    // ChannelFeedComponent,
+    // ChannelsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    ChannelService
+    // ChannelService
   ],
   bootstrap: [AppComponent]
 })

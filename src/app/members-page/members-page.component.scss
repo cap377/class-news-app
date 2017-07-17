@@ -3,6 +3,9 @@ img {
   height: 100px;
   border-radius: 50%;
 }
+ul {
+  text-align: center;
+}
 li {
   display: inline-block;
 }
@@ -14,6 +17,23 @@ li {
   left: 50%;
   margin-top:-150px;
   margin-left:-150px;
-  background-color: grey;
+  background-color: #3B3B3B;
   font-size: 100px;
+  img {
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    z-index: 1000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+.grey-sheet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  width: 5000px;
+  height: 5000px;
+  opacity: 0.5;
 }
