@@ -3,18 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
-import { ChannelsComponent } from './channels/channels.component';
+
 
 import { MessageBoxComponent } from './message-box/message-box.component';
 import { MessageDetailsComponent } from './message-details/message-details.component';
 
-
 import { MembersPageComponent } from './members-page/members-page.component';
 import { MemberComponent } from './member/member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import {ChannelService} from './channel.service';
 
+
+
+<<<<<<< HEAD
 // import { ChannelService } from './channel.service';
+=======
+>>>>>>> 0b094ac84a3143975854367dbd73dd9e637c2528
 
 @NgModule({
   declarations: [
@@ -23,9 +27,14 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
     MessageDetailsComponent,
     MembersPageComponent,
     MemberComponent,
+<<<<<<< HEAD
     MemberDetailComponent,
     // ChannelFeedComponent,
     // ChannelsComponent
+=======
+    MemberDetailComponent
+
+>>>>>>> 0b094ac84a3143975854367dbd73dd9e637c2528
   ],
   imports: [
     BrowserModule,
