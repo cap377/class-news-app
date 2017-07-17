@@ -9,13 +9,21 @@ import {Message} from '../message';
   styleUrls: ['./message-box.component.scss']
 })
 export class MessageBoxComponent implements OnInit {
-  @Input()messageJSON:any;
+  @Input()messageObj:any;
   constructor(
   ) { }
-
+  message:any;
   ngOnInit() {
+    this.message = this.createMessage(this.messageObj);
   }
-  message = this.createMessage(this.messageJSON);
+
+
+
+
+
+
+
+
 
   createMessage(obj:any):any{
     let date:string= obj.ts;

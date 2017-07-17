@@ -4,17 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 import { MessageBoxComponent } from './message-box/message-box.component';
 import { MessageDetailsComponent } from './message-details/message-details.component';
+
 import { MembersPageComponent } from './members-page/members-page.component';
 import { MemberComponent } from './member/member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-
     MessageBoxComponent,
     MessageDetailsComponent,
     MembersPageComponent,
@@ -26,7 +29,9 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ChannelService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
