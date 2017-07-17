@@ -11,6 +11,7 @@ import { MessageDetailsComponent } from './message-details/message-details.compo
 import { MembersPageComponent } from './members-page/members-page.component';
 import { MemberComponent } from './member/member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import {ChannelService} from './channel.service';
 
 
 
