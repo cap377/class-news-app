@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChannelService } from '../channel.service';
 
 @Component({
   selector: 'app-channels',
