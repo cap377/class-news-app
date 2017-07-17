@@ -1,0 +1,17 @@
+<div class="channel-feed-container">
+  <div class="channel-feed-header">
+    <div class="channel-feed-header-icon">
+      #
+    </div>
+    <div class="channel-feed-header-name">
+      {{channelName}}
+    </div>
+    <div class="channel-feed-header-posts">
+      {{numRecentMessages}} recent posts
+    </div>
+  </div>
+  <div class="channel-feed-messages">
+    <message-box *ngfor = "message of messages">
+    </message-box>
+  </div>
+</div>
