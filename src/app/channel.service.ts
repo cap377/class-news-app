@@ -6,10 +6,14 @@ let CHANNELS:any[] = [
     "recentPosts" : 5,
     "messages" : [
       {
-
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
       },
       {
-
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
       }
     ]
   },
@@ -18,10 +22,14 @@ let CHANNELS:any[] = [
     "recentPosts" : 7,
     "messages" : [
       {
-
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
       },
       {
-
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
       }
     ]
   }

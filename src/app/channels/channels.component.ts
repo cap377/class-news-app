@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChannelService } from '../channel.service';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-channels',
@@ -9,8 +10,8 @@ import { ChannelService } from '../channel.service';
 export class ChannelsComponent implements OnInit
 {
   channels:any[];
-  constructor(private channelService:ChannelService) { }
 
+  constructor(private channelService:ChannelService) { }
   ngOnInit()
   {
     this.channelService.getChannels().then(channels => this.channels = channels);

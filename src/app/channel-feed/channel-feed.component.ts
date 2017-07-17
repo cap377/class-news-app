@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NgClass, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-channel-feed',
@@ -7,18 +8,22 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ChannelFeedComponent implements OnInit
 {
-  @Input()channelName:string;
-  @Input()numRecentMessages:number;
+  @Input()channel:any;
+  name:string;
+  numRecentMessages:number;
   potentialColors = ["channel-feed-red", "channel-feed-blue", "channel-feed-orange", "channel-feed-green", "channel-feed-yellow"];
-  color:string;
-  @Input()messages:any[];
+  backgroundColor:string = "";
+  messages:any[];
   constructor()
   {
+    this.name = this.channel.name;
+    this.numRecentMessages = this.channel.recentPosts;
+    this.messages = this.channel.messages;
   }
 
   ngOnInit()
   {
-    this.color =  this.potentialColors[Math.floor(Math.random() * 5)];
+    this.backgroundColor =  this.potentialColors[Math.floor(Math.random() * 5)];
   }
 
 }
