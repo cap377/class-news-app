@@ -9,7 +9,7 @@ export class ChannelFeedComponent implements OnInit
 {
   @Input()channelName:string;
   @Input()numRecentMessages:number;
-  potentialColors = ["red", "blue", "orange", "green", "yellow"];
+  potentialColors = ["channel-feed-red", "channel-feed-blue", "channel-feed-orange", "channel-feed-green", "channel-feed-yellow"];
   color:string;
   @Input()messages:any[];
   constructor()
