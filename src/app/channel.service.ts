@@ -32,6 +32,54 @@ let CHANNELS:any[] = [
         "text" : "klefljldkejslkfdj"
       }
     ]
+  },
+  {
+    "name" : "channel3",
+    "recentPosts" : 74,
+    "messages" : [
+      {
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
+      },
+      {
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
+      }
+    ]
+  },
+  {
+    "name" : "channel4",
+    "recentPosts" : 67,
+    "messages" : [
+      {
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
+      },
+      {
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
+      }
+    ]
+  },
+  {
+    "name" : "channel5",
+    "recentPosts" : 97,
+    "messages" : [
+      {
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
+      },
+      {
+        "ts" : 993,
+        "user" : "guy",
+        "text" : "klefljldkejslkfdj"
+      }
+    ]
   }
 ];
 

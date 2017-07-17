@@ -27,8 +27,8 @@ export class ChannelFeedComponent implements OnInit
   //   };
   name:string;
   numRecentMessages:number;
-  potentialBoxColors = ["channel-feed-red", "channel-feed-blue", "channel-feed-orange", "channel-feed-green", "channel-feed-yellow"];
-  potentialIconColors = ["channel-feed-icon-red", "channel-feed-icon-blue", "channel-feed-icon-orange", "channel-feed-icon-green", "channel-feed-icon-yellow"];
+  potentialBoxColors = ["channel-feed-red", "channel-feed-blue", "channel-feed-orange", "channel-feed-green", "channel-feed-yellow", "channel-feed-pink"];
+  potentialIconColors = ["channel-feed-icon-red", "channel-feed-icon-blue", "channel-feed-icon-orange", "channel-feed-icon-green", "channel-feed-icon-yellow", "channel-feed-icon-pink"];
   iconColor:string = "";
   backgroundColor:string = "";
   messages:any[];
@@ -44,7 +44,7 @@ export class ChannelFeedComponent implements OnInit
 
   ngOnInit()
   {
-    let classIndex:number = Math.floor(Math.random() * 5);
+    let classIndex:number = Math.floor(Math.random() * 6);
     this.backgroundColor =  this.potentialBoxColors[classIndex];
     this.iconColor =  this.potentialIconColors[classIndex];
   }
