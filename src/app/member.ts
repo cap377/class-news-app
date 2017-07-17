@@ -2,11 +2,11 @@ export class Member {
   name: string;
   image: string;
   email: string;
-  status: boolean;
-  constructor(newName:string, newImage:string, newEmail:string, newStatus:boolean){
+  presence: string;
+  constructor(newName:string, newImage:string, newEmail:string, newPresence:string){
     this.name = newName;
     this.image = newImage;
     this.email = newEmail;
-    this.status = newStatus;
+    this.presence = newPresence;
   }
 }
