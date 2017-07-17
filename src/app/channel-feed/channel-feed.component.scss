@@ -3,9 +3,29 @@
   height: calc(100% * (1/6));
   .channel-feed-header
   {
+    display: flex;
+    height: 10%;
     .channel-feed-header-icon
     {
-
+      flex: 1;
+      font-size: 2em;
+      color: {{color}};
     }
+    .channel-feed-header-name
+    {
+      flex: 3;
+      color: white;
+    }
+    .channel-feed-header-name
+    {
+      flex: 8;
+      background-color: {{color}};
+      color: white;
+    }
+  }
+  .channel-feed-messages
+  {
+    height: 90%;
+    background-color: black;
   }
 }
