@@ -7,7 +7,7 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 import {MessageBoxComponent} from './message-box/message-box.component';
 
 
-// import { ChannelsComponent } from './channels/channels.component';
+import { ChannelsComponent } from './channels/channels.component';
 
 
 const routes: Routes = [
@@ -18,7 +18,7 @@ const routes: Routes = [
 
   { path: 'message-box', component: MessageBoxComponent },
 
-  // { path: 'channels', component: ChannelsComponent}
+  { path: 'channels', component: ChannelsComponent}
 ];
 
 @NgModule({

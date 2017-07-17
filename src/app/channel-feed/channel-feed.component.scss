@@ -1,25 +1,57 @@
 .channel-feed-container
 {
   height: calc(100% * (1/6));
+  border-bottom: white solid 2px;
   .channel-feed-header
   {
     display: flex;
     height: 10%;
     .channel-feed-header-icon
     {
-      flex: 1;
+      flex: 0.2;
+      text-align: center;
+      margin: auto;
+      font-weight: bold;
+      background-color: #2D2C2C;
       font-size: 2em;
       //color: {{color}};
     }
+    .channel-feed-icon-red
+    {
+      color: #DB7676;
+    }
+    .channel-feed-icon-blue
+    {
+      color: #7682DB;
+    }
+    .channel-feed-icon-orange
+    {
+      color: #DBA476;
+    }
+    .channel-feed-icon-green
+    {
+      color: #76DBAC;
+    }
+    .channel-feed-icon-yellow
+    {
+      color: #CFDB76;
+    }
     .channel-feed-header-name
     {
-      flex: 3;
+      flex: 0.8;
+      background-color: #2D2C2C;
+      text-align: center;
+      margin: auto;
+      font-weight: bold;
+      padding: 8.5px 7px 8.5px 0px;
       color: white;
     }
     .channel-feed-header-posts
     {
-      flex: 8;
+      flex: 11;
       //background-color: {{color}};
+      padding: 8.5px 0px 8.5px 0px;
+      margin: auto;
       color: white;
     }
     .channel-feed-red
@@ -46,6 +78,14 @@
   .channel-feed-messages
   {
     height: 90%;
-    background-color: black;
+    background-color: #2D2C2C;
+    padding: 15px;
+    .message-box-wrapper
+    {
+        display: inline-block;
+        overflow-x: auto;
+        margin: 15px;
+
+    }
   }
 }

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 let CHANNELS:any[] = [
   {
-    "Name" : "channel1",
+    "name" : "ANNOUCEMENTS",
     "recentPosts" : 5,
     "messages" : [
       {
@@ -18,7 +18,7 @@ let CHANNELS:any[] = [
     ]
   },
   {
-    "Name" : "channel2",
+    "name" : "channel2",
     "recentPosts" : 7,
     "messages" : [
       {
