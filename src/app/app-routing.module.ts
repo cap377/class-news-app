@@ -11,14 +11,14 @@ import {MessageBoxComponent} from './message-box/message-box.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/members-page', pathMatch: 'full' },
+  { path: '', redirectTo: '/message-box', pathMatch: 'full' },
   { path: 'members-page',  component: MembersPageComponent },
   { path: 'member-component', component: MemberComponent },
   { path: 'member-detail-component', component: MemberDetailComponent },
 
-  { path: 'message-box-component', component: MessageBoxComponent },
+  { path: 'message-box', component: MessageBoxComponent },
 
-  //{ path: 'channels', component: ChannelsComponent}
+  // { path: 'channels', component: ChannelsComponent}
 ];
 
 @NgModule({

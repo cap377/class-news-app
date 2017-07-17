@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 
 import {Message} from '../message';
+import {MessageService} from '../message-service/message.service';
 
 @Component({
   selector: 'app-message-box',
@@ -11,21 +12,31 @@ import {Message} from '../message';
 export class MessageBoxComponent implements OnInit {
   @Input()messageJSON:any;
   constructor(
-  ) { }
+    private messageService: MessageService
+  ) {}
 
   ngOnInit() {
   }
-  message = this.createMessage(this.messageJSON);
+  //message = this.messageService.createMessage(this.messageJSON);
 
-  createMessage(obj:any):any{
-    let date:string= obj.ts;
-    let author:string = obj.user;
-    let message:string = obj.text;
-    //let reactions:any = 1;
-    //let reactions:any = obj.reactions;
-    let reactions:any = new Array(obj.reactions);
+  reactionArray = [
+    {
+      name:'thumbsUp',
+      count: 5
+  },
 
-    return new Message(date, author, message, reactions);
-  }
+  {
+    name: 'smiley',
+    count: 2
+  },
+  {
+  name: 'randomReaction',
+  count: 9
+}
+]
+  fakeMessage = new Message('7.14.1990', 'Chris Harlow',
+  'It is my birthday today, happy birthday to me', this.reactionArray );
+
+
 
 }
