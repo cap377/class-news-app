@@ -1,0 +1,14 @@
+<ul>
+  <li *ngFor="let member of members" (click)="onSelect(member)">
+    <span>
+      <div *ngIf="member.status==true">
+        Online
+      </div>
+      <img src="{{member.image}}" />
+      {{member.name}}
+    </span>
+  </li>
+</ul>
+<div *ngIf="selectedMember">
+  {{selectedMember.name}}
+</div>
