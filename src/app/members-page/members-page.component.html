@@ -14,17 +14,24 @@
   </ul>
 </div>
 <div [ngClass]="{'grey-sheet':selectedMember}">
-
 </div>
 <div *ngIf="selectedMember">
   <div class="modal">
     <img src="{{selectedMember.image}}" />
-    <div class="member-detail-name">
-      {{selectedMember.name}}
+    <div class="member-name-background">
+      <div class="member-detail-name">
+        {{selectedMember.name}} lastname
+      </div>
+    </div>
+    <div class="member-online-background">
+      <img src="../../assets/online-logo.PNG" />
     </div>
     <button class="exit-button" type="button" (click)="removeSelected()">X</button>
     <div class="member-detail-white-box">
       asdfsadf
+    </div>
+    <div class="member-info">
+      {{selectedMember.email}}
     </div>
   </div>
 </div>

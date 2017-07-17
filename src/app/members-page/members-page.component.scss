@@ -3,6 +3,7 @@ img {
   height: 100px;
   border-radius: 50%;
   border: solid white 1px;
+  z-index: 1;
 }
 ul {
   margin-left: 10%;
@@ -32,17 +33,32 @@ li {
   margin-top:-150px;
   margin-left:-150px;
   background-color: #525252;
+  z-index: 3;
   img {
     margin: 10px;
     position: relative;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    z-index: 5;
   }
   .member-detail-name {
     position: relative;
+    text-align: left;
+    margin-left: 40%;
+    margin-top: 5px;
+    width: 60px;
+    background-color: #7682DB;
+    z-index:3;
+  }
+  .member-name-background {
+    position: absolute;
     display: inline;
-    top: -100px;
+    width: 100%;
+    left: 0;
+    height: 50px;
+    background-color: #7682DB;
+    z-index: 4;
   }
   .member-detail-white-box {
     color: black;
@@ -55,6 +71,22 @@ li {
     float: right;
     margin: 10px;
   }
+  .member-online-background {
+    position: absolute;
+    background-color: #3B3B3B;
+    width: calc(50% - 20px);
+    height: 150px;
+    top: 0;
+    z-index: 3;
+    img {
+      float: right;
+      margin-top: 78%;
+      margin-right: 0;
+      border: 0;
+      width: 45px;
+      height: 45px;
+    }
+  }
 }
 .grey-sheet {
   position: absolute;
@@ -64,12 +96,14 @@ li {
   width: 100%;
   height: 100%;
   opacity: 0.5;
+  z-index: 2;
 }
 .exit-button {
   position: relative;
   float:right;
   top: 0;
   margin: 10px 10px 10px 10px;
+  z-index: 4;
 }
 .member-status {
   img {
@@ -81,4 +115,10 @@ li {
     top: 30px;
     left: -35px;
   }
+}
+.member-info {
+  width: calc(50% - 20px);
+  height: 50%;
+  margin-top: 25px;
+  padding-left: 5px;
 }
