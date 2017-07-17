@@ -9,7 +9,8 @@ import {MessageService} from '../message-service/message.service';
   templateUrl: './message-box.component.html',
   styleUrls: ['./message-box.component.scss']
 })
-export class MessageBoxComponent implements OnInit {
+export class MessageBoxComponent implements OnInit
+{
   @Input()messageJSON:any;
   constructor(
     private messageService: MessageService
