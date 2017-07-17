@@ -4,9 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {ChannelBoxComponent} from './channel-box.component';
+import {ChannelDisplayComponent} from './channel-display.component';
+import {HomeComponent} from './home.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChannelBoxComponent,
+    ChannelDisplayComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
