@@ -16,6 +16,7 @@ export class SlackService {
   private USER_URL = "https://slack.com/api/users.list?presence=true&token="+this.key.token;
   private USER_IDENTITY_URL = "https://slack.com/api/users.info?token="+this.key.token+"&user=";
 
+
   //Global variables holding the data used for other applicants
   private CHANNEL_DATA = [];
   private MEMBER_INFO = [];

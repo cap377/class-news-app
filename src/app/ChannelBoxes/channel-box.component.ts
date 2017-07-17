@@ -4,7 +4,7 @@ import { NgClass } from '@angular/common';
 @Component({
   selector: 'channel-box',
   templateUrl: './channel-box.component.html',
-  styleUrls: ['./channel-display.component.scss']
+  styleUrls: ['./channel-box.component.scss']
 })
 
 

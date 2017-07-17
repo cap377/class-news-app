@@ -1,11 +1,35 @@
 <div class="messageBoxWrapper">
-  <div class="messageBoxTimeDiv">
-      <span>@ </span>{{fakeMessage.getDate()}}
+  <div class="messageBoxDateDiv">
+    <span>@ </span>{{message.getDate()}}
   </div>
-    <div class="messageBoxTextDiv">
-    {{fakeMessage.getText()}}
-    </div>
+  <div class="messageBoxTextDiv" (click)="onSelect(fakeMessage)">
+    {{message.getText()}}
+  </div>
   <div class="messageBoxAuthorDiv">
-    - {{fakeMessage.getAuthor()}}
+    - {{message.getAuthor()}}
+  </div>
+</div>
+
+<!-- if we select a member then we display a modal -->
+<div *ngIf="selectedMessage">
+  <div id="modal" class="modal">
+    <div class="modalContent">
+      <button class="exit-button" type="button" (click)="removeSelected()">X</button>
+      <div class="messageDetailsDateDiv">
+        <span>@ </span>{{message.getDate()}}
+      </div>
+      <div class="messageDetailsTextDiv">
+        {{message.getText()}}
+      </div>
+      <div class="messageDetailsAuthorDiv">
+        - {{message.getAuthor()}}
+      </div>
+      <div class="messageDetailsReactionDiv">
+        <li *ngFor="let reaction of reactions">
+          {{reaction.name}} : {{reaction.count}}
+        </li>
+
+      </div>
+    </div>
   </div>
 </div>
