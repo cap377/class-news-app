@@ -4,7 +4,7 @@ import { Headers, Http } from '@angular/http';
 import { Observable } from 'rxjs/observable';
 import 'rxjs/add/operator/map';
 
-let token = "xoxp-201484241093-202931719879-213968136212-115603c2e63ec46bdbb54b5bc676dce2";
+let token = "";
 
 
 @Injectable()
