@@ -1,6 +1,6 @@
 <div class="channel-feed-container">
   <div class="channel-feed-header">
-    <div  class="channel-feed-header-icon">
+    <div [ngClass]="iconColor" class="channel-feed-header-icon">
       #
     </div>
     <div class="channel-feed-header-name">
@@ -12,7 +12,7 @@
   </div>
   <div class="channel-feed-messages">
     <div class="message-box-wrapper" *ngFor="let message of messages">
-      <app-message-box [messageJSON]="message"></app-message-box>
+      <app-message-box [messageObj]="message"></app-message-box>
     </div>
   </div>
 </div>

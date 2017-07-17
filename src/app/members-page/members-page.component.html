@@ -3,28 +3,35 @@
     <li *ngFor="let member of members, index as i" (click)="onSelect(member)">
       <span>
         <div class="member-status" *ngIf="member.presence=='active'">
-          <img src="../../assets/online-logo.PNG" />
+          <img src="../../assets/online-logo.png" />
         </div>
         <img src="{{member.image}}" />
         <div class="member-name">
-          {{member.name}} lastname
+          {{member.name}}
         </div>
       </span>
     </li>
   </ul>
 </div>
 <div [ngClass]="{'grey-sheet':selectedMember}">
-
 </div>
 <div *ngIf="selectedMember">
   <div class="modal">
     <img src="{{selectedMember.image}}" />
-    <div class="member-detail-name">
-      {{selectedMember.name}}
+    <div class="member-name-background">
+      <div class="member-detail-name">
+        {{selectedMember.name}}
+      </div>
+    </div>
+    <div class="member-online-background">
+      <img src="../../assets/online-logo.png" />
     </div>
     <button class="exit-button" type="button" (click)="removeSelected()">X</button>
     <div class="member-detail-white-box">
-      asdfsadf
+
+    </div>
+    <div class="member-info">
+      {{selectedMember.email}}
     </div>
   </div>
 </div>
