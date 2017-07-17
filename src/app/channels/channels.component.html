@@ -1,7 +1,5 @@
-<!-- <div *ngfor="channel of channels">
-  <app-channel-feed
-  [channelName] = {{channel.Name}}
-  [numRecentMessages] = {{channel.recentPosts}}
-  [messages] = {{channel.Messages}}>
+<div *ngFor="let channel of channels">
+  <app-channel-feed [channel]="channel">
+    {{channel}}
   </app-channel-feed>
 </div> -->

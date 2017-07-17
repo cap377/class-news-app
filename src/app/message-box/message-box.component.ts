@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { NgFor } from '@angular/common';
 
 import {Message} from '../message';
 import {MessageService} from '../message-service/message.service';
@@ -9,7 +9,8 @@ import {MessageService} from '../message-service/message.service';
   templateUrl: './message-box.component.html',
   styleUrls: ['./message-box.component.scss']
 })
-export class MessageBoxComponent implements OnInit {
+export class MessageBoxComponent implements OnInit
+{
   @Input()messageJSON:any;
   constructor(
     private messageService: MessageService

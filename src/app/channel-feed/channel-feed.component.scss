@@ -16,11 +16,31 @@
       flex: 3;
       color: white;
     }
-    .channel-feed-header-name
+    .channel-feed-header-posts
     {
       flex: 8;
       //background-color: {{color}};
       color: white;
+    }
+    .channel-feed-red
+    {
+      background-color: #DB7676;
+    }
+    .channel-feed-blue
+    {
+      background-color: #7682DB;
+    }
+    .channel-feed-orange
+    {
+      background-color: #DBA476;
+    }
+    .channel-feed-green
+    {
+      background-color: #76DBAC;
+    }
+    .channel-feed-yellow
+    {
+      background-color: #CFDB76;
     }
   }
   .channel-feed-messages

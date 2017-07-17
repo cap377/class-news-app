@@ -1,17 +1,18 @@
-<!-- <div class="channel-feed-container">
+<div class="channel-feed-container">
   <div class="channel-feed-header">
-    <div ngclass = {{color}} class="channel-feed-header-icon">
+    <div  class="channel-feed-header-icon">
       #
     </div>
     <div class="channel-feed-header-name">
-      {{channelName}}
+      {{name}}
     </div>
-    <div class="channel-feed-header-posts">
+    <div [ngClass] = "backgroundColor" class="channel-feed-header-posts">
       {{numRecentMessages}} recent posts
     </div>
   </div>
   <div class="channel-feed-messages">
-    <message-box *ngfor = "message of messages">
-    </message-box>
+    <div class="message-box-wrapper" *ngFor="let message of messages">
+      <app-message-box [messageJSON]="message"></app-message-box>
+    </div>
   </div>
-</div> -->
+</div>

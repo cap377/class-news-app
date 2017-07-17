@@ -1,13 +1,11 @@
-<div>
+<div class="messageBoxWrapper">
   <div class="messageBoxTimeDiv">
-    {{fakeMessage.getDate()}}
+      <span>@ </span>{{fakeMessage.getDate()}}
   </div>
-  <div class="messageBoxbackgroundDiv">
     <div class="messageBoxTextDiv">
-      {{fakeMessage.getText()}}
+    {{fakeMessage.getText()}}
     </div>
-  </div>
   <div class="messageBoxAuthorDiv">
-    {{fakeMessage.getAuthor()}}
+    - {{fakeMessage.getAuthor()}}
   </div>
 </div>

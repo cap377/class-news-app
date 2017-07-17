@@ -8,12 +8,26 @@
   width: 162px;
   height: 125px;
   color: white;
+  font-size: 12px;
   background-color: #525252;
   border: solid #94979A 8px;
   text-align: center;
 }
 
 .messageBoxTimeDiv{
-  font-size: 16px;
+  width:170px;
+  font-size: 20px;
+  color: #818386;
+  text-align: right;
+span{
+  color: #DB7676;
+  font-size: 14px;
+  vertical-align: top;
+}
+}
 
+
+
+.messageBoxAuthorDiv{
+  @extend .messageBoxTimeDiv;
 }
