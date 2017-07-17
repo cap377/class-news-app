@@ -13,6 +13,7 @@ $sixthColor: yellow;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
 }
 
 // .box-container > channel-box{
@@ -42,20 +43,18 @@ $sixthColor: yellow;
     width: 28%;
     background-color: transparent;
     margin-bottom: 25px;
+
 }
 
 .General-box{
   @include channelBox($firstColor);
 }
 
- #emptyLabel{
-  background-color: $firstColor;
-  color:red;
 
-}
 
-.Introductions-box label{
+.Introductions-box{
   background-color: $secondColor;
+
 }
 
 .Introductions-box{

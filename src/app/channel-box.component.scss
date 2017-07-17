@@ -1,4 +1,61 @@
 
+$firstColor: black;
+$secondColor: blue;
+$thirdColor: red;
+$fourthColor: green;
+$fifthColor: orange;
+$sixthColor: yellow;
+
+
+
+.General-empty-label{
+  background-color: $firstColor;
+}
+
+.General-pound{
+  color: $firstColor;
+}
+
+.Introductions-empty-label{
+  background-color: $secondColor;
+}
+
+.Introductions-pound{
+  color: $secondColor;
+}
+
+.Random-empty-label{
+  background-color: $thirdColor;
+}
+
+.Random-pound{
+  color: $thirdColor;
+}
+
+.Relocation-empty-label{
+  background-color: $fourthColor;
+}
+
+.Relocation-pound{
+  color: $fourthColor;
+}
+
+.Speakers-empty-label{
+  background-color: $fifthColor;
+}
+
+.Speakers-pound{
+  color: $fifthColor;
+}
+
+.Announcements-empty-label{
+  background-color: $sixthColor;
+}
+
+.Announcements-pound{
+  color: $sixthColor;
+}
+
 
 // @mixin channelBox($color){
 //     border: 3px solid $color;

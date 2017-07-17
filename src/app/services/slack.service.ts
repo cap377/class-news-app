@@ -7,10 +7,10 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SlackService {
   //Global URL Variables used for slack api calls
-  private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token=xoxp-201484241093-202931719879-214010852182-8cb90fff0cdbe1e0ba098bcf2467ebde";
-  private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token=xoxp-201484241093-202931719879-214010852182-8cb90fff0cdbe1e0ba098bcf2467ebde&channel=";
-  private USER_URL = 'https://slack.com/api/users.list?presence=true&token=xoxp-201484241093-202931719879-214010852182-8cb90fff0cdbe1e0ba098bcf2467ebde';
-  private USER_IDENTITY_URL = 'https://slack.com/api/users.info?token=xoxp-201484241093-202931719879-214010852182-8cb90fff0cdbe1e0ba098bcf2467ebde&user=';
+  private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token=" + this.token;
+  private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token="+this.token+"&channel=";
+  private USER_URL = 'https://slack.com/api/users.list?presence=true&token='+this.token;
+  private USER_IDENTITY_URL = 'https://slack.com/api/users.info?token='+this.token+'&user=';
 
   //Global variables holding the data used for other applicants
   private CHANNEL_DATA = [];
