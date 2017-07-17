@@ -14,17 +14,18 @@ const appRoutes: Routes = [
   {path: 'service-test', component: ServiceTestComponent}
 ];
 
-import {ChannelBoxComponent} from './channel-box.component';
-import {ChannelDisplayComponent} from './channel-display.component';
+import {ChannelBoxComponent} from './channelboxes/channel-box.component';
+import {ChannelDisplayComponent} from './channelboxes/channel-display.component';
 
 import { MessageBoxComponent } from './message-box/message-box.component';
 
 import { MembersPageComponent } from './members-page/members-page.component';
-import { MemberComponent } from './member/member.component';
-import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
 import {ChannelService} from './channel.service';
+import {HomeComponent} from './home.component';
+
+import { MessageListComponent } from './message-list/message-list.component';
 
 
 
@@ -34,12 +35,12 @@ import {ChannelService} from './channel.service';
     ServiceTestComponent,
     MessageBoxComponent,
     MembersPageComponent,
-    MemberComponent,
-    MemberDetailComponent,
     ChannelFeedComponent,
     ChannelsComponent,
     ChannelBoxComponent,
-    ChannelDisplayComponent
+    ChannelDisplayComponent,
+    HomeComponent,
+    MessageListComponent
   ],
   imports: [
     BrowserModule,
@@ -48,8 +49,13 @@ import {ChannelService} from './channel.service';
     RouterModule.forRoot(appRoutes),
   ],
   providers: [
+<<<<<<< HEAD
     SlackService,
     ChannelService
+=======
+    ChannelService,
+    SlackService
+>>>>>>> 1265dc2d85303796222025cdc0d5b0c9c97607e5
   ],
 
 

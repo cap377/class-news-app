@@ -17,6 +17,7 @@ h1 {
 nav {
   text-align: center;
   background: gray;
+  height: 50px;
   ul {
     list-style: none;
   }
@@ -28,4 +29,9 @@ nav {
 a {
   text-decoration: none;
   color: white;
+  padding: 5px;
+}
+a:hover{
+  background: white;
+  color: blue;
 }

@@ -80,16 +80,16 @@ li {
     z-index: 3;
     img {
       float: right;
-      margin-top: 78%;
+      margin-top: 75%;
       margin-right: 0;
       border: 0;
-      width: 45px;
-      height: 45px;
+      width: 45%;
+      height: 45%;
     }
   }
 }
 .grey-sheet {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: white;
@@ -108,12 +108,12 @@ li {
 .member-status {
   img {
     position: relative;
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     border: 0;
     border-radius: 0;
-    top: 30px;
-    left: -15px;
+    top: 50px;
+    left: -25px;
   }
 }
 .member-info {

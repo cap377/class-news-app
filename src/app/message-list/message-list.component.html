@@ -1,0 +1,18 @@
+<div class="channel-feed-container">
+  <div class="channel-feed-header">
+    <div [ngClass]="iconColor" class="channel-feed-header-icon">
+      #
+    </div>
+    <div class="channel-feed-header-name">
+      {{name}}
+    </div>
+    <div [ngClass] = "backgroundColor" class="channel-feed-header-posts">
+      {{numRecentMessages}} recent posts
+    </div>
+  </div>
+  <div class="channel-feed-messages">
+    <div class="message-box-wrapper" *ngFor="let message of messages">
+      <app-message-box [messageObj]="message"></app-message-box>
+    </div>
+  </div>
+</div>
