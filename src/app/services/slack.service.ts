@@ -11,9 +11,9 @@ let token = "";
 export class SlackService {
   //Global URL Variables used for slack api calls
   private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token=" + token;
-  private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token=" + token;
+  private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token=" + token +"&channel=";
   private USER_URL = 'https://slack.com/api/users.list?presence=true&token=' + token;
-  private USER_IDENTITY_URL = 'https://slack.com/api/users.info?token=' + token;
+  private USER_IDENTITY_URL = 'https://slack.com/api/users.info?token=' + token + "&user=";
 
   //Global variables holding the data used for other applicants
   private CHANNEL_DATA = [];

@@ -48,6 +48,8 @@ import {ChannelService} from './channel.service';
     RouterModule.forRoot(appRoutes),
   ],
   providers: [
+    SlackService,
+    ChannelService
   ],
 
 

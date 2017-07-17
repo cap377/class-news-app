@@ -9,22 +9,7 @@ import { NgClass, NgFor } from '@angular/common';
 export class ChannelFeedComponent implements OnInit
 {
   @Input()channel:any;
-  // channel:any =   {
-  //     "name" : "channel1",
-  //     "recentPosts" : 5,
-  //     "messages" : [
-  //       {
-  //         "ts" : 993,
-  //         "user" : "guy",
-  //         "text" : "klefljldkejslkfdj"
-  //       },
-  //       {
-  //         "ts" : 993,
-  //         "user" : "guy",
-  //         "text" : "klefljldkejslkfdj"
-  //       }
-  //     ]
-  //   };
+
   name:string;
   numRecentMessages:number;
   potentialBoxColors = ["channel-feed-red", "channel-feed-blue", "channel-feed-orange", "channel-feed-green", "channel-feed-yellow", "channel-feed-pink"];
@@ -34,12 +19,12 @@ export class ChannelFeedComponent implements OnInit
   messages:any[];
   constructor()
   {
-    if(this.channel)
-    {
-      this.name = this.channel.name;
-      this.numRecentMessages = this.channel.recentPosts;
-      this.messages = this.channel.messages;
-    }
+    // if(this.channel)
+    // {
+    //   this.name = this.channel.name;
+    //   this.numRecentMessages = this.channel.recentPosts;
+    //   this.messages = this.channel.messages;
+    // }
   }
 
   ngOnInit()
@@ -51,12 +36,12 @@ export class ChannelFeedComponent implements OnInit
 
   ngOnChanges(changes: SimpleChanges)
   {
-    if(changes['channel'])
-    {
-      this.name = this.channel.name;
-      this.numRecentMessages = this.channel.recentPosts;
-      this.messages = this.channel.messages;
-    }
+    // if(changes['channel'])
+    // {
+    //   this.name = this.channel.name;
+    //   this.numRecentMessages = this.channel.recentCount;
+    //   this.messages = this.channel.messages;
+    // }
   }
 
 }
