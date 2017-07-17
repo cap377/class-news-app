@@ -1,17 +1,22 @@
-<ul>
-  <li *ngFor="let member of members" (click)="onSelect(member)">
-    <span>
-      <div *ngIf="member.status==true">
-        Online
-      </div>
-      <img src="{{member.image}}" />
-      {{member.name}}
-    </span>
-  </li>
-</ul>
+<div>
+  <ul>
+    <li *ngFor="let member of members" (click)="onSelect(member)">
+      <span>
+        <div *ngIf="member.status==true">
+          Online
+        </div>
+        <img src="{{member.image}}" />
+        {{member.name}}
+      </span>
+    </li>
+  </ul>
+</div>
+<div [ngClass]="{'grey-sheet':selectedMember}">
+
+</div>
 <div *ngIf="selectedMember">
-  <!-- {{selectedMember.name}} -->
-  <div class="modal">
+  <div class="modal" (click)="removeSelected()">
+    <img src="{{selectedMember.image}}" />
     {{selectedMember.name}}
   </div>
 </div>
