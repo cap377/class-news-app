@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import {Message} from '../message';
 
@@ -8,7 +8,7 @@ import {Message} from '../message';
   styleUrls: ['./message-details.component.scss']
 })
 export class MessageDetailsComponent implements OnInit {
-
+  @Input()messageObj:any;
   constructor() { }
 
   ngOnInit() {
