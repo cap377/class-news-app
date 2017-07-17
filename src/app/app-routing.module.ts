@@ -11,13 +11,11 @@ import { ChannelsComponent } from './channels/channels.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/message-box', pathMatch: 'full' },
+  { path: '', redirectTo: '/members-page', pathMatch: 'full' },
   { path: 'members-page',  component: MembersPageComponent },
   { path: 'member-component', component: MemberComponent },
   { path: 'member-detail-component', component: MemberDetailComponent },
-
   { path: 'message-box', component: MessageBoxComponent },
-
   { path: 'channels', component: ChannelsComponent}
 ];
 

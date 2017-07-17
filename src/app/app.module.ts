@@ -24,7 +24,7 @@ import { MemberComponent } from './member/member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
-import {ChannelService} from './channel.service';
+import { ChannelService } from './channel.service';
 import { MessageListComponent } from './message-list/message-list.component';
 
 
@@ -50,6 +50,7 @@ import { MessageListComponent } from './message-list/message-list.component';
     RouterModule.forRoot(appRoutes),
   ],
   providers: [
+    SlackService
   ],
 
 
