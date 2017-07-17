@@ -34,14 +34,13 @@ import {ChannelService} from './channel.service';
   declarations: [
     AppComponent,
     ServiceTestComponent,
-
     MessageBoxComponent,
     MessageDetailsComponent,
     MembersPageComponent,
     MemberComponent,
     MemberDetailComponent,
-    // ChannelFeedComponent,
-    // ChannelsComponent
+    ChannelFeedComponent,
+    ChannelsComponent,
     ChannelBoxComponent,
     ChannelDisplayComponent
   ],
@@ -50,8 +49,6 @@ import {ChannelService} from './channel.service';
     HttpModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    ChannelFeedComponent,
-    ChannelsComponent
   ],
   providers: [
     ChannelService,
