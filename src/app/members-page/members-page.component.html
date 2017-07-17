@@ -1,12 +1,17 @@
 <div>
   <ul>
-    <li *ngFor="let member of members" (click)="onSelect(member)">
+    <li *ngFor="let member of members, index as i" (click)="onSelect(member)">
       <span>
-        <div *ngIf="member.status==true">
+        <div *ngIf="(i+1)/4 == 0">
+          <br />
+        </div>
+        <div class="member-status" *ngIf="member.presence=='active'">
           Online
         </div>
         <img src="{{member.image}}" />
-        {{member.name}}
+        <div class="member-name">
+          {{member.name}} lastname
+        </div>
       </span>
     </li>
   </ul>
@@ -15,8 +20,14 @@
 
 </div>
 <div *ngIf="selectedMember">
-  <div class="modal" (click)="removeSelected()">
+  <div class="modal">
     <img src="{{selectedMember.image}}" />
-    {{selectedMember.name}}
+    <div class="member-detail-name">
+      {{selectedMember.name}}
+    </div>
+    <button class="exit-button" type="button" (click)="removeSelected()">X</button>
+    <div class="member-detail-white-box">
+      asdfsadf
+    </div>
   </div>
 </div>
