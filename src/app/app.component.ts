@@ -8,5 +8,5 @@ import { HttpModule } from '@angular/http';
 })
 
 export class AppComponent {
-  title = 'app';
+  title = 'ACE Class News';
 }
