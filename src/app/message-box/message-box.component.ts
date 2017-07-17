@@ -42,8 +42,8 @@ export class MessageBoxComponent implements OnInit
   }
 
   createMessage(obj:any):any{
-    this.message.date= obj.ts;
-    this.message.author = obj.user;
+    this.message.date= obj.time;
+    this.message.author = obj.name;
     this.message.text= obj.text;
     //let reactions:any = 1;
     //let reactions:any = obj.reactions;

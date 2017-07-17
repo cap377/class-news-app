@@ -25,6 +25,7 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { ChannelsComponent } from './channels/channels.component';
 import { ChannelFeedComponent } from './channel-feed/channel-feed.component';
 import {ChannelService} from './channel.service';
+import { MessageListComponent } from './message-list/message-list.component';
 
 
 
@@ -39,7 +40,8 @@ import {ChannelService} from './channel.service';
     ChannelFeedComponent,
     ChannelsComponent,
     ChannelBoxComponent,
-    ChannelDisplayComponent
+    ChannelDisplayComponent,
+    MessageListComponent
   ],
   imports: [
     BrowserModule,
