@@ -34,10 +34,8 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     ServiceTestComponent,
 
-=======
     MessageBoxComponent,
     MessageDetailsComponent,
     MembersPageComponent,
@@ -47,7 +45,6 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
     // ChannelsComponent
     ChannelBoxComponent,
     ChannelDisplayComponent
->>>>>>> e5b842efe5191ab8deee524b49b6f382e3ea157e
   ],
   imports: [
     BrowserModule,
@@ -55,14 +52,9 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
   ],
-<<<<<<< HEAD
-  providers: [SlackService, DatePipe],
-=======
-  providers: [
-  //  ChannelService,
-    MessageService
-  ],
->>>>>>> e5b842efe5191ab8deee524b49b6f382e3ea157e
+  providers: [SlackService, DatePipe, MessageService],
+
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
