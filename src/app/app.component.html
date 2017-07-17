@@ -1,6 +1,38 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <home-page></home-page>
-</div>
 
-<router-outlet></router-outlet>
+<html>
+<head>
+</head>
+<body>
+  <img src="../../assets/online-logo.PNG" />
+  <h1>
+    {{title}}
+  </h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Channels
+        </a>
+      </li>
+      <li>
+        <a href="./members-page">
+          Members
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Other
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <channel-display></channel-display>
+  <router-outlet></router-outlet>
+</body>
+</html>
