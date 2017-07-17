@@ -4,13 +4,16 @@ import { Headers, Http } from '@angular/http';
 import { Observable } from 'rxjs/observable';
 import 'rxjs/add/operator/map';
 
+let token = "";
+
+
 @Injectable()
 export class SlackService {
   //Global URL Variables used for slack api calls
-  private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token=xoxp-201484241093-202931719879-214010852182-8cb90fff0cdbe1e0ba098bcf2467ebde";
-  private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token=xoxp-201484241093-202931719879-214010852182-8cb90fff0cdbe1e0ba098bcf2467ebde&channel=";
-  private USER_URL = 'https://slack.com/api/users.list?presence=true&token=xoxp-201484241093-202931719879-214010852182-8cb90fff0cdbe1e0ba098bcf2467ebde';
-  private USER_IDENTITY_URL = 'https://slack.com/api/users.info?token=xoxp-201484241093-202931719879-214010852182-8cb90fff0cdbe1e0ba098bcf2467ebde&user=';
+  private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token=" + token;
+  private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token=" + token;
+  private USER_URL = 'https://slack.com/api/users.list?presence=true&token=' + token;
+  private USER_IDENTITY_URL = 'https://slack.com/api/users.info?token=' + token;
 
   //Global variables holding the data used for other applicants
   private CHANNEL_DATA = [];
