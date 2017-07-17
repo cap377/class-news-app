@@ -1,0 +1,79 @@
+
+
+$firstColor: black;
+$secondColor: blue;
+$thirdColor: red;
+$fourthColor: green;
+$fifthColor: orange;
+$sixthColor: yellow;
+
+
+
+.box-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+// .box-container > channel-box{
+//   // flex: 1;
+//   // border: 3px solid yellow;
+//   // border-top: 10px solid yellow;
+//   height: 250px;
+//   width: 22%;
+//   background-color: transparent;
+//   padding: 20px;
+// }
+
+
+// .channel-box{
+//   border: 3px solid yellow;
+//   border-top: 10px solid yellow;
+//   height: 250px;
+//   width: 400px;
+//   background-color: transparent;
+// }
+
+
+
+@mixin channelBox($color){
+    border: 3px solid $color;
+    height: 250px;
+    width: 28%;
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+
+.General-box{
+  @include channelBox($firstColor);
+}
+
+ #emptyLabel{
+  background-color: $firstColor;
+  color:red;
+
+}
+
+.Introductions-box label{
+  background-color: $secondColor;
+}
+
+.Introductions-box{
+  @include channelBox($secondColor);
+}
+
+.Random-box{
+  @include channelBox($thirdColor);
+}
+
+.Relocation-box{
+  @include channelBox($fourthColor);
+}
+
+.Speakers-box{
+  @include channelBox($fifthColor);
+}
+
+.Announcements-box{
+  @include channelBox($sixthColor);
+}

@@ -16,11 +16,13 @@ h1 {
 }
 nav {
   text-align: center;
+  background: gray;
   ul {
     list-style: none;
   }
   li {
     display: inline-block;
+    border-left: 2px white solid;
   }
 }
 a {
