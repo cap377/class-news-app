@@ -2,11 +2,8 @@
   <ul>
     <li *ngFor="let member of members, index as i" (click)="onSelect(member)">
       <span>
-        <div *ngIf="(i+1)/4 == 0">
-          <br />
-        </div>
         <div class="member-status" *ngIf="member.presence=='active'">
-          Online
+          <img src="../../assets/online-logo.PNG" />
         </div>
         <img src="{{member.image}}" />
         <div class="member-name">
