@@ -8,8 +8,7 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 const routes: Routes = [
   { path: '', redirectTo: '/members-page', pathMatch: 'full' },
   { path: 'members-page',  component: MembersPageComponent },
-  { path: 'member-component', component: MemberComponent },
-  { path: 'member-detail-component', component: MemberDetailComponent }
+  { path: 'member-component', component: MemberComponent }
 ];
 
 @NgModule({
