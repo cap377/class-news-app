@@ -8,12 +8,40 @@ let CHANNELS:any[] = [
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       },
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       }
     ]
   },
@@ -24,12 +52,40 @@ let CHANNELS:any[] = [
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       },
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       }
     ]
   },
@@ -40,12 +96,40 @@ let CHANNELS:any[] = [
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       },
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       }
     ]
   },
@@ -56,12 +140,40 @@ let CHANNELS:any[] = [
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       },
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       }
     ]
   },
@@ -72,12 +184,40 @@ let CHANNELS:any[] = [
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       },
       {
         "ts" : 993,
         "user" : "guy",
-        "text" : "klefljldkejslkfdj"
+        "text" : "klefljldkejslkfdj",
+        "reactions" : [
+                {
+                  name:'thumbsUp',
+                  count: 5
+                },
+                {
+                  name: 'smiley',
+                  count: 2
+                },
+                {
+                  name: 'randomReaction',
+                  count: 9
+                }
+              ]
       }
     ]
   }
