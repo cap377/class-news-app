@@ -1,0 +1,54 @@
+Merge branch 'master' of https://github.com/cap377/class-news-app
+"Merge"
+# Conflicts:
+#	src/app/app.module.ts
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Christopher Harlow <Christopher.Harlow@siriuscom.com>
+#
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 14 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   package-lock.json
+#	modified:   src/app/app-routing.module.ts
+#	modified:   src/app/app.component.html
+#	modified:   src/app/app.component.scss
+#	modified:   src/app/app.component.ts
+#	modified:   src/app/app.module.ts
+#	new file:   src/app/channel-box.component.html
+#	new file:   src/app/channel-box.component.scss
+#	new file:   src/app/channel-box.component.ts
+#	new file:   src/app/channel-display.component.html
+#	new file:   src/app/channel-display.component.scss
+#	new file:   src/app/channel-display.component.ts
+#	modified:   src/app/channel-feed/channel-feed.component.html
+#	modified:   src/app/channel-feed/channel-feed.component.scss
+#	modified:   src/app/channel-feed/channel-feed.component.ts
+#	modified:   src/app/channel.service.ts
+#	new file:   src/app/channel.ts
+#	modified:   src/app/channels/channels.component.html
+#	modified:   src/app/channels/channels.component.scss
+#	modified:   src/app/channels/channels.component.ts
+#	new file:   src/app/list-of-channels.ts
+#	modified:   src/app/members-page/members-page.component.html
+#	modified:   src/app/members-page/members-page.component.scss
+#	new file:   src/app/service-test/service-test.component.html
+#	new file:   src/app/service-test/service-test.component.scss
+#	new file:   src/app/service-test/service-test.component.spec.ts
+#	new file:   src/app/service-test/service-test.component.ts
+#	new file:   src/app/services/slack.service.ts
+#	new file:   src/assets/online-logo.PNG
+#

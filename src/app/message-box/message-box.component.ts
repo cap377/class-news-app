@@ -17,7 +17,7 @@ export class MessageBoxComponent implements OnInit
 
   ngOnInit() {
   }
-  message: Message;
+  message: Message = new Message("","","",[]);
   ngOnChanges(changes: SimpleChanges){
     if (changes['messageObj']){
       this.message = this.createMessage(this.messageObj)
@@ -25,27 +25,10 @@ export class MessageBoxComponent implements OnInit
   }
 
 
-  reactionArray = [
-    {
-      name:'thumbsUp',
-      count: 5
-  },
 
-  {
-    name: 'smiley',
-    count: 2
-  },
-  {
-  name: 'randomReaction',
-  count: 9
-}
-]
-//this is fake data for testing
-  fakeMessage = new Message('7.14.1990', 'Chris Harlow',
-  'It is my birthday today, happy birthday to me', this.reactionArray );
 //used to collect a modal
   selectedMessage: Message;
-  reactions = this.fakeMessage.getReactions();
+  reactions = this.message.getReactions();
 //used to select a message to display a modal
   onSelect(message): void{
     this.selectedMessage = message;
@@ -59,14 +42,14 @@ export class MessageBoxComponent implements OnInit
   }
 
   createMessage(obj:any):any{
-    let date:string= obj.ts;
-    let author:string = obj.user;
-    let message:string = obj.text;
+    this.message.date= obj.ts;
+    this.message.author = obj.user;
+    this.message.text= obj.text;
     //let reactions:any = 1;
     //let reactions:any = obj.reactions;
-    let reactions:any = new Array(obj.reactions);
+    this.message.reactions = new Array(obj.reactions);
 
-    return new Message(date, author, message, reactions);
+    // return new Message(date, author, message, reactions);
   }
 
 
