@@ -1,3 +1,14 @@
+body {
+  background-color: #3B3B3B;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
 nav {
   text-align: center;
   ul {
@@ -6,4 +17,8 @@ nav {
   li {
     display: inline-block;
   }
+}
+a {
+  text-decoration: none;
+  color: white;
 }

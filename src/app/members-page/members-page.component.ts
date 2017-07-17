@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Member } from '../member';
-import { NgIf } from '@angular/common';
+import { NgIf, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-members-page',
@@ -30,6 +30,10 @@ export class MembersPageComponent implements OnInit {
 
   onSelect(member: Member): void{
     this.selectedMember = member;
+  }
+
+  removeSelected(): void{
+    this.selectedMember = null;
   }
 
 }

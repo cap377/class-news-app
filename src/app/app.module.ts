@@ -12,10 +12,11 @@ import { MessageService} from './message-service/message.service';
 import { MembersPageComponent } from './members-page/members-page.component';
 import { MemberComponent } from './member/member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
-import {ChannelService} from './channel.service';
+//import {ChannelService} from './channel.service';
 
 
 
+// import { ChannelService } from './channel.service';
 
 @NgModule({
   declarations: [
@@ -24,15 +25,16 @@ import {ChannelService} from './channel.service';
     MessageDetailsComponent,
     MembersPageComponent,
     MemberComponent,
-    MemberDetailComponent
-
+    MemberDetailComponent,
+    // ChannelFeedComponent,
+    // ChannelsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    ChannelService,
+  //  ChannelService,
     MessageService
   ],
   bootstrap: [AppComponent]
