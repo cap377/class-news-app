@@ -19,7 +19,7 @@ export class SlackService {
 
 
   //Global variables holding the data used for other applicants
-  private CHANNEL_DATA = [];
+  public CHANNEL_DATA = [];
   private MEMBER_INFO = [];
 
   //Color pallete
@@ -34,6 +34,10 @@ export class SlackService {
 
   //constructor
   constructor(private http: Http) { }
+
+  public getChData():any{
+    return this.CHANNEL_DATA;
+  }
 
   //this function gets the users information based on the user ID
   private getUserIdentity(userID: string): Promise<any> {
@@ -106,12 +110,12 @@ export class SlackService {
 
   //Makes the API call to retrieve the list of channels
   //Parses the channel data out into a javascript object
-  public getChannelsAndMessages(): Promise<any> {
+  public callChannelsAndMessages(): Promise<any> {
     let channelResults;
     let messageResults;
     let messageParsed;
     let latestMessageTime;
-    let colorCounter = 0;
+    let results = [];
 
     return new Promise((resolve, reject) => {       //creating the promise
       this.http.get(this.CHANNELS_LIST_URL)          //retriving the observable response data type and making the API call
@@ -123,24 +127,39 @@ export class SlackService {
             let completeURL = this.CHANNELS_HISTORY_URL + channelResults.channels[channelIndex].id;   //combining the url with the id to get specific channel information
 
             this.getMessages(completeURL).then((data) => {       //a promise that is made to fill out the messages
-
-              this.CHANNEL_DATA[channelIndex] = {
+              results[channelIndex] = {
                 id: channelResults.channels[channelIndex].id,
                 name: channelResults.channels[channelIndex].name,
                 recentCount: data.count,
                 messages: data.messages,
-                color: this.colors[colorCounter++]
+                color: this.colors[channelIndex%6]
               }
-              if(colorCounter > 5)
-                colorCounter = 0;
             });
           }
 
-          console.log(this.CHANNEL_DATA);     //logging console data
-          resolve(this.CHANNEL_DATA);        //sending resolved data structured correctly
+          //console.log(results);     //logging console data
+          resolve(results);        //sending resolved data structured correctly
           reject(Error("Call could not be made"));
         });
     });
+  }
+
+  public getChannelsAndMessages():Promise<any>{
+    return new Promise((resolve,reject) => {
+        if(this.CHANNEL_DATA.length == 0){
+            this.callChannelsAndMessages().then((data) =>{
+              this.CHANNEL_DATA = data;
+              resolve(this.CHANNEL_DATA);
+            });
+        }
+        else{
+          resolve(this.CHANNEL_DATA);
+          this.callChannelsAndMessages().then((data) =>{
+            this.CHANNEL_DATA = data;
+            resolve(this.CHANNEL_DATA);
+          });
+        }
+      });
   }
 
   //this function makes a call to the user API to gather information
@@ -163,7 +182,7 @@ export class SlackService {
             };
           }
 
-          console.log(this.MEMBER_INFO);                                   //logs all the member information into the console
+          //console.log(this.MEMBER_INFO);                                   //logs all the member information into the console
           resolve(this.MEMBER_INFO);
           reject(Error("Could not retrieve API"));
         })
