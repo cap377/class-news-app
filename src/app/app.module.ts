@@ -49,8 +49,8 @@ import { MessageListComponent } from './message-list/message-list.component';
     RouterModule.forRoot(appRoutes),
   ],
   providers: [
-    ChannelService,
-    SlackService
+    SlackService,
+    ChannelService
   ],
 
 

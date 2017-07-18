@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { ChannelService } from '../channel.service';
+import { SlackService } from '../services/slack.service';
 import { NgFor, NgIf } from '@angular/common';
 
 @Component({
@@ -9,12 +10,21 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class ChannelsComponent implements OnInit
 {
-  channels:any[];
+  channels:any[] = [];
 
-  constructor(private channelService:ChannelService) { }
+  constructor(private slackService:SlackService ) { }
   ngOnInit()
   {
-    this.channelService.getChannels().then(channels => this.channels = channels);
+    this.slackService.getChannelsAndMessages().then((channelsArray) =>{
+     this.channels = channelsArray;
+
+     console.log("inside : ",this.channels);
+   });
+  }
+
+
+  ngOnChanges(changes: SimpleChanges){
+
   }
 
 }

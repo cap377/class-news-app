@@ -1,6 +1,5 @@
 .channel-feed-container
 {
-  height: calc(100% * (1/6));
   border-bottom: white solid 2px;
   .channel-feed-header
   {
@@ -88,11 +87,18 @@
     height: 90%;
     background-color: #2D2C2C;
     padding: 15px;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    // transform: rotate(-90deg);
+    // transform-origin: right-top;
     .message-box-wrapper
     {
         display: inline-block;
-        overflow-x: auto;
+        // transform: rotate(90deg);
+        // transform-origin: right-top;
         margin: 15px;
+
 
     }
   }

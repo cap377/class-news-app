@@ -2,21 +2,35 @@ import { Injectable } from '@angular/core';
 import { DatePipe } from '@angular/common';
 import { Headers, Http } from '@angular/http';
 import { Observable } from 'rxjs/observable';
+import { Key } from './key';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class SlackService {
+  //constant token
+  private key:Key = new Key;
+
   //Global URL Variables used for slack api calls
-  //token deleted
-  token;
-  private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token=" + this.token;
-  private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token="+this.token+"&channel=";
-  private USER_URL = 'https://slack.com/api/users.list?presence=true&token='+this.token;
-  private USER_IDENTITY_URL = 'https://slack.com/api/users.info?token='+this.token+'&user=';
+
+  private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token="+this.key.token;
+  private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token="+this.key.token+"&channel=";
+  private USER_URL = "https://slack.com/api/users.list?presence=true&token="+this.key.token;
+  private USER_IDENTITY_URL = "https://slack.com/api/users.info?token="+this.key.token+"&user=";
+
 
   //Global variables holding the data used for other applicants
   private CHANNEL_DATA = [];
   private MEMBER_INFO = [];
+
+  //Color pallete
+  private colors = [
+    "red",
+    "blue",
+    "orange",
+    "green",
+    "yellow",
+    "pink",
+  ]
 
   //constructor
   constructor(private http: Http) { }
@@ -97,6 +111,7 @@ export class SlackService {
     let messageResults;
     let messageParsed;
     let latestMessageTime;
+    let colorCounter = 0;
 
     return new Promise((resolve, reject) => {       //creating the promise
       this.http.get(this.CHANNELS_LIST_URL)          //retriving the observable response data type and making the API call
@@ -113,8 +128,11 @@ export class SlackService {
                 id: channelResults.channels[channelIndex].id,
                 name: channelResults.channels[channelIndex].name,
                 recentCount: data.count,
-                messages: data.messages
+                messages: data.messages,
+                color: this.colors[colorCounter++]
               }
+              if(colorCounter > 5)
+                colorCounter = 0;
             });
           }
 
