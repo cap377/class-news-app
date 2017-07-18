@@ -41,7 +41,7 @@
     }
     .channel-feed-header-name
     {
-      flex: 0.8;
+      flex: 1.8;
       background-color: #2D2C2C;
       text-align: center;
       margin: auto;
@@ -51,7 +51,7 @@
     }
     .channel-feed-header-posts
     {
-      flex: 11;
+      flex: 10;
       //background-color: {{color}};
       padding: 8.5px 0px 8.5px 0px;
       margin: auto;
@@ -87,8 +87,8 @@
     height: 90%;
     background-color: #2D2C2C;
     padding: 15px;
-    width: 100%;
-    overflow-x: auto;
+    width: 97%;
+    overflow-y: auto;
     white-space: nowrap;
     // transform: rotate(-90deg);
     // transform-origin: right-top;

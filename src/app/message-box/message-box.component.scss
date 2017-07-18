@@ -11,7 +11,10 @@
   font-size: 12px;
   background-color: #525252;
   border: solid #94979A 8px;
+  word-wrap: break-word;
+  white-space: normal;
   text-align: center;
+  overflow: hidden;
 }
 
 .messageBoxDateDiv {
