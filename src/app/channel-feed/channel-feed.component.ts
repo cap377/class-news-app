@@ -37,7 +37,6 @@ export class ChannelFeedComponent implements OnInit
     this.messages = this.channel.messages;
     this.backgroundColor += this.channel.color;
     this.iconColor += this.channel.color;
-    console.log(this.channel);
   }
 
   // listAllMessages(event){
