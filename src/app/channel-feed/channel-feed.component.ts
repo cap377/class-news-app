@@ -18,40 +18,40 @@ export class ChannelFeedComponent implements OnInit
   iconColor:string = "channel-feed-icon-";
   backgroundColor:string = "channel-feed-";
   messages:any[];
-  //private _data = new BehaviorSubject<Post[]>([]);
+
   constructor(private _ngZone: NgZone)
   {
-    // if(this.channel)
-    // {
-    //   this.name = this.channel.name;
-    //   this.numRecentMessages = this.channel.recentPosts;
-    //   this.messages = this.channel.messages;
-    // }
 
   }
 
   ngOnInit()
   {
+
   }
 
   ngOnChanges(changes: SimpleChanges)
   {
-    // if(changes['channel'])
-    // {
-    //   this._ngZone.run(() => {
-    //     this.name = this.channel.name;
-    //     this.numRecentMessages = this.channel.recentCount;
-    //     this.messages = this.channel.messages;
-    //     this.backgroundColor += this.channel.color;
-    //     this.iconColor += this.channel.color;
-    //   });
-    //
-    // }
+
     this.name = this.channel.name;
     this.numRecentMessages = this.channel.recentCount;
     this.messages = this.channel.messages;
     this.backgroundColor += this.channel.color;
     this.iconColor += this.channel.color;
+  }
+
+  listAllMessages(event){
+    let a = event.target;
+    let b = event.currentTarget;
+    console.log(a);
+    console.log(b);
+    console.log(event);
+    let classArray:any = new Array<any>();
+    classArray = document.getElementsByClassName('channel-feed-container');
+    for (let item of classArray){
+      if (item != event){
+      item.style.display = 'none';
+    }}
+
   }
 
 }

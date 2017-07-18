@@ -22,8 +22,5 @@ export class ChannelsComponent implements OnInit
   }
 
 
-  ngOnChanges(changes: SimpleChanges){
-
-  }
 
 }

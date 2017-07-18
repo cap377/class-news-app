@@ -1,5 +1,5 @@
 <div *ngIf="channel">
-  <div class="channel-feed-container">
+  <div class="channel-feed-container" (click)="listAllMessages(this)">
     <div class="channel-feed-header">
       <div [ngClass]="iconColor" class="channel-feed-header-icon">
         #
