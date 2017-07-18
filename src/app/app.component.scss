@@ -11,13 +11,19 @@ h1 {
   position: absolute;
   display: inline;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 0;
+  font-size: 48px;
+}
+img {
+  margin-top: 20px;
+  width: 80px;
 }
 nav {
   text-align: center;
   background: gray;
   height: 40px;
+  border-bottom: solid white 1px;
   ul {
     padding-top: 10px;
     padding-left: 0;
