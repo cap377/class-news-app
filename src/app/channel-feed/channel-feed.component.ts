@@ -39,19 +39,19 @@ export class ChannelFeedComponent implements OnInit
     this.iconColor += this.channel.color;
   }
 
-  listAllMessages(event){
-    let a = event.target;
-    let b = event.currentTarget;
-    console.log(a);
-    console.log(b);
-    console.log(event);
-    let classArray:any = new Array<any>();
-    classArray = document.getElementsByClassName('channel-feed-container');
-    for (let item of classArray){
-      if (item != event){
-      item.style.display = 'none';
-    }}
-
-  }
+  // listAllMessages(event){
+  //   let a = event.target;
+  //   let b = event.currentTarget;
+  //   console.log(a);
+  //   console.log(b);
+  //   console.log(event);
+  //   let classArray:any = new Array<any>();
+  //   classArray = document.getElementsByClassName('channel-feed-container');
+  //   for (let item of classArray){
+  //     if (item != event){
+  //     item.style.display = 'none';
+  //   }}
+  //
+  // }
 
 }
