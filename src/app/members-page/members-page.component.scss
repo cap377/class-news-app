@@ -88,11 +88,10 @@ li {
     position: relative;
     display: inline-block;
     background-color: white;
-    width: 50%;
+    width: 290px;
     top: 50px;
-    right: -45px;
-    height: calc(100% - 70px);
-    margin: 10px;
+    height: 410px;
+    margin: 20px;
     float: right;
   }
   .member-online-background {
@@ -110,13 +109,6 @@ li {
       width: 35%;
       height: auto;
     }
-  }
-  .exit-button {
-    position: relative;
-    float:right;
-    top: 0;
-    margin: 10px 10px 10px 10px;
-    z-index: 4;
   }
   .member-info {
     font-size: 20px;
