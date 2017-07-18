@@ -17,8 +17,10 @@ h1 {
 nav {
   text-align: center;
   background: gray;
-  height: 50px;
+  height: 40px;
   ul {
+    padding-top: 10px;
+    padding-left: 0;
     list-style: none;
   }
   li {
@@ -34,4 +36,8 @@ a {
 a:hover{
   background: white;
   color: blue;
+}
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
 }
