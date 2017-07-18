@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges, NgZone } from '@angular/core';
 import { NgFor, NgIf} from '@angular/common';
 
 import {Message} from '../message';
@@ -12,15 +12,17 @@ import {Message} from '../message';
 export class MessageBoxComponent implements OnInit
 {
   @Input()messageObj:any;
-  constructor(
-  ) {}
+  constructor(private _ngZone: NgZone)
+  {
+
+  }
 
   ngOnInit() {
   }
   message: Message = new Message("","","",[]);
   ngOnChanges(changes: SimpleChanges){
     if (changes['messageObj']){
-      this.message = this.createMessage(this.messageObj)
+      this.message = this.createMessage(this.messageObj);
     }
   }
 
@@ -42,14 +44,15 @@ export class MessageBoxComponent implements OnInit
   }
 
   createMessage(obj:any):any{
-    this.message.date= obj.time;
-    this.message.author = obj.name;
-    this.message.text= obj.text;
-    //let reactions:any = 1;
-    //let reactions:any = obj.reactions;
-    this.message.reactions = new Array(obj.reactions);
+      let date= obj.time;
+      let author = obj.name;
+      let text= obj.text;
+      //let reactions:any = 1;
+      //let reactions:any = obj.reactions;
+      let reactions = obj.reactions;
 
-    // return new Message(date, author, message, reactions);
+      return new Message(date, author, text, reactions);
+
   }
 
 
