@@ -19,7 +19,7 @@ export class ChannelsComponent implements OnInit
      this.channels = channelsArray;
 
      console.log("inside : ",this.channels);
-   });
+    });
   }
 
 
