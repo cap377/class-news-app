@@ -17,9 +17,8 @@ export class ChannelsComponent implements OnInit
   {
     this.slackService.getChannelsAndMessages().then((channelsArray) =>{
      this.channels = channelsArray;
-
-     console.log("inside : ",this.channels);
-    });
+     console.log(this.slackService.getChData());
+   });
   }
 
 
