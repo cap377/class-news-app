@@ -7,18 +7,36 @@ body {
   top: 0;
   left: 0;
 }
+.purple-rectangle {
+  background-color: #7682DB;
+  margin-top: -152px;
+  width: 90%;
+  height: 110px;
+  float: right;
+  border-bottom: solid white 1px;
+}
 h1 {
   position: absolute;
   display: inline;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 0;
+  font-size: 48px;
+}
+img {
+  margin-top: 20px;
+  width: 80px;
 }
 nav {
   text-align: center;
   background: gray;
-  height: 50px;
+  height: 40px;
+  border-bottom: solid white 1px;
+  font-weight: bold;
+  text-transform: uppercase;
   ul {
+    padding-top: 10px;
+    padding-left: 0;
     list-style: none;
   }
   li {
@@ -34,4 +52,8 @@ a {
 a:hover{
   background: white;
   color: blue;
+}
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
 }
