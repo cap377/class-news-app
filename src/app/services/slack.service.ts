@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SlackService {
   //Global URL Variables used for slack api calls
+  //token deleted
   token;
   private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token=" + this.token;
   private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token="+this.token+"&channel=";

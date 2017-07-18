@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {SlackService} from '../services/slack.service';
 
 
 const CHANNELS: any[] = [
@@ -10,6 +11,15 @@ const CHANNELS: any[] = [
   { name: 'Announcements', color: 'red' }
 ];
 
+
+const colors: any[] = [
+  'orange',
+  'blue',
+  'lightgreen',
+  'yellow',
+  'pink',
+  'red'
+];
 
 
 @Component({
@@ -25,15 +35,45 @@ export class ChannelDisplayComponent implements OnInit {
   //   id: 1,
   //   name: 'Windstorm'
   // };
+    private colors;
+    channels: any[] = [];
+    channelsWithColor: any[] = [];
+    // @Input() channel: any;
 
-  channels = CHANNELS;
-  // @Input() channel: any;
+    private channelData;
 
-  ngOnInit(): void{
-    //  ngOnInit(): void{
-        //this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(1, 5))
+    constructor(private slackObj: SlackService) { }
 
-  }
+
+    getChannels():void{
+      this.slackObj.getChannelsAndMessages().then((data) =>{
+        this.channelData = data
+        console.log(this.channelData);
+      });
+
+      for(let i = 0; i < 6; i++){
+        this.channels.push(this.channelData[i].name)
+
+      }
+      for(let i = 0; i < 6; i++){
+        this.channelsWithColor[i].push({name: this.channels[i], color: colors[i]});
+
+      }
+
+    }
+
+    ngOnInit() {
+      this.getChannels();
+    }
+
+  // channels = CHANNELS;
+  // // @Input() channel: any;
+  //
+  // ngOnInit(): void{
+  //   //  ngOnInit(): void{
+  //       //this.heroService.getHeroes().then(heroes => this.heroes = heroes.slice(1, 5))
+  //
+  // }
 
 }
 
@@ -41,16 +81,8 @@ export class ChannelDisplayComponent implements OnInit {
 
 // import { Component, OnInit, Input } from '@angular/core';
 //
-// import {SlackService} from './services/slack.service';
 //
-// const colors: any[] = [
-//   'orange',
-//   'blue',
-//   'lightgreen',
-//   'yellow',
-//   'pink',
-//   'red'
-// ];
+
 //
 //
 // const CHANNELS: any[] = [
@@ -79,35 +111,7 @@ export class ChannelDisplayComponent implements OnInit {
 //   //   id: 1,
 //   //   name: 'Windstorm'
 //   // };
-//   channels: any[] = [];
-//   channelsWithColor: any[] = [];
-//   // @Input() channel: any;
-//
-//   private channelData;
-//
-//   constructor(private slackObj: SlackService) { }
-//
-//
-//   getChannels():void{
-//     this.slackObj.getChannelsAndMessages().then((data) =>{
-//       this.channelData = data
-//       console.log(this.channelData);
-//     });
-//
-//     for(let i = 0; i < 6; i++){
-//       this.channels.push(this.channelData[i].name)
-//
-//     }
-//     for(let i = 0; i < 6; i++){
-//       this.channelsWithColor[i].push({name: this.channels[i], color: colors[i]});
-//
-//     }
-//
-//   }
-//
-//   ngOnInit() {
-//     //this.getChannels();
-//   }
+
 //
 //
 // }
