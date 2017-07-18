@@ -11,6 +11,7 @@ export class SlackService {
   private key:Key = new Key;
 
   //Global URL Variables used for slack api calls
+
   private CHANNELS_LIST_URL = "https://slack.com/api/channels.list?token="+this.key.token;
   private CHANNELS_HISTORY_URL = "https://slack.com/api/channels.history?token="+this.key.token+"&channel=";
   private USER_URL = "https://slack.com/api/users.list?presence=true&token="+this.key.token;
