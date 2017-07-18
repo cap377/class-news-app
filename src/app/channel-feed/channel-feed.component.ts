@@ -32,26 +32,6 @@ export class ChannelFeedComponent implements OnInit
 
   ngOnInit()
   {
-    // this.name = this.channel.name;
-    // this.numRecentMessages = this.channel.recentCount;
-    // this.messages = this.channel.messages;
-    // this.backgroundColor += this.channel.color;
-    // this.iconColor += this.channel.color;
-
-    // let classIndex:number = Math.floor(Math.random() * 6);
-    // this.backgroundColor =  this.potentialBoxColors[classIndex];
-    // this.iconColor =  this.potentialIconColors[classIndex];i
-
-    // this._data
-
-    // add this line
-    // listen to data as long as groupPosts is undefined or null
-    // Unsubscribe once groupPosts has value
-
-    // .takeWhile(() => !this.groupPosts)
-    // .subscribe(x => {
-    //     this.groupPosts = this.groupByCategory(this.data);
-    // });
   }
 
   ngOnChanges(changes: SimpleChanges)
@@ -72,7 +52,6 @@ export class ChannelFeedComponent implements OnInit
     this.messages = this.channel.messages;
     this.backgroundColor += this.channel.color;
     this.iconColor += this.channel.color;
-    console.log(this.channel);
   }
 
 }
