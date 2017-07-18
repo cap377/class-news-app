@@ -31,10 +31,7 @@ const colors: any[] = [
 
 
 export class ChannelDisplayComponent implements OnInit {
-  // hero: Hero = {
-  //   id: 1,
-  //   name: 'Windstorm'
-  // };
+
 
   channelsWithColor: any[] = [];
   visitedIndexes: number[] = [];
@@ -86,50 +83,3 @@ export class ChannelDisplayComponent implements OnInit {
   }
 
 }
-
-
-
-// import { Component, OnInit, Input } from '@angular/core';
-//
-// import {SlackService} from './services/slack.service';
-//
-// const colors: any[] = [
-//   'orange',
-//   'blue',
-//   'lightgreen',
-//   'yellow',
-//   'pink',
-//   'red'
-// ];
-//
-//
-// const CHANNELS: any[] = [
-//   { name: 'General', color: 'orange' },
-//   { name: 'Introductions', color: 'blue' },
-//   { name: 'Random', color: 'lightgreen' },
-//   { name: 'Relocation', color: 'yellow' },
-//   { name: 'Speakers', color: 'pink' },
-//   { name: 'Announcements', color: 'red' }
-// ];
-//
-//
-//
-//
-//
-// @Component({
-//   selector: 'channel-display',
-//   templateUrl: './channel-display.component.html',
-//   styleUrls: ['./channel-display.component.scss']
-// })
-//
-//
-//
-// export class ChannelDisplayComponent implements OnInit {
-//   // hero: Hero = {
-//   //   id: 1,
-//   //   name: 'Windstorm'
-//   // };
-
-//
-//
-// }
