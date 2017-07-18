@@ -1,4 +1,7 @@
-<div id="channels-container" *ngFor="let channel of channels">
+<div id="channels-container"
+     *ngFor="let channel of channels"
+     (click)="sendChannelInformation(channel)"
+     href="./message-list/:channelID">
   <app-channel-feed [channel]="channel">
   </app-channel-feed>
 </div>
