@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Token
-src/app/services/key.ts
+!src/app/services/key.ts

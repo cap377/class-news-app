@@ -1,3 +1,0 @@
-export class Key{
-  token:string = "xoxp-201484241093-201484314498-213962087554-e43398d6e3970398710daf9422fedfb6"
-}
