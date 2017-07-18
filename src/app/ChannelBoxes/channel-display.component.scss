@@ -7,20 +7,11 @@ $fourthColor: green;
 $fifthColor: orange;
 $sixthColor: yellow;
 
-
-
 .box-container{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-
 }
-
-app-message-box{
-   margin-left: 55px
-}
-
-
 
 @mixin channelBox($color){
     border: 3px solid $color;
@@ -31,15 +22,41 @@ app-message-box{
 
 }
 
-.General-box{
+//==============================
+
+.channel-box-red {
+  @include channelBox(#DB7676);
+
+}
+.channel-box-blue {
+  @include channelBox(#7682DB);
+
+}
+.channel-box-orange {
+  @include channelBox(#DBA476);
+
+}
+.channel-box-green {
+  @include channelBox(#76DBAC);
+
+}
+.channel-box-yellow {
+  @include channelBox(#CFDB76);
+
+}
+.channel-box-pink {
+  @include channelBox(#DB76B8);
+
+}
+
+//==============================
+
+.channel-box{
   @include channelBox($firstColor);
 }
 
-
-
-.Introductions-box{
-  background-color: $secondColor;
-
+.General-box{
+  @include channelBox($firstColor);
 }
 
 .Introductions-box{
