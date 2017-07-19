@@ -1,12 +1,14 @@
-<div style="display:flex">
-  <div>
-    <label class="channel-label-header">
-      <span [ngClass]="'channel-box-icon-' + channel.color" class="channel-icon">#</span>
-      <span class="channel-name-header">{{channel.name}}</span>
-    </label>
+<div [ngClass] = "('channel-box-' + channel.color)">
+  <div style="display:flex">
+    <div>
+      <label class="channel-label-header">
+        <span [ngClass]="'channel-box-icon-' + channel.color" class="channel-icon">#</span>
+        <span class="channel-name-header">{{channel.name}}</span>
+      </label>
+    </div>
+    <label [ngClass]="'channel-box-label-'+ channel.color" class="filler-label">&nbsp;</label>
   </div>
-  <label [ngClass]="'channel-box-label-'+ channel.color" class="filler-label">&nbsp;</label>
-</div>
-<div class="channel-box-message-box">
-  <app-message-box [messageObj]="channel.messages[0]"></app-message-box>
+  <div class="channel-box-message-box">
+    <app-message-box [messageObj]="channel.messages[0]"></app-message-box>
+  </div>
 </div>

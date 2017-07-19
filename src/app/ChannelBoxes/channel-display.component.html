@@ -1,8 +1,8 @@
-<div>
+<div class="channel-display-container">
   <div class="app-channel-feed-div">
     <app-channel-feed [channel]="channelData[0]"></app-channel-feed>
   </div>
   <div class="box-container">
-    <channel-box *ngFor="let channel of channelData" [channel]="channel" [ngClass] = "('channel-box-' + channel.color)"></channel-box>
+    <channel-box *ngFor="let channel of channelData | slice:2:8" [channel]="channel" [ngClass] = "('channel-box-' + channel.color)"></channel-box>
   </div>
 </div>

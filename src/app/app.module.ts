@@ -26,8 +26,7 @@ import {ChannelService} from './channel.service';
 import {HomeComponent} from './home.component';
 
 import { MessageListComponent } from './message-list/message-list.component';
-
-
+import {ShufflePipe} from './ChannelBoxes/ShufflePipe';
 
 @NgModule({
   declarations: [
@@ -40,7 +39,8 @@ import { MessageListComponent } from './message-list/message-list.component';
     ChannelBoxComponent,
     ChannelDisplayComponent,
     HomeComponent,
-    MessageListComponent
+    MessageListComponent,
+    ShufflePipe
   ],
   imports: [
     BrowserModule,

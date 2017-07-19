@@ -7,7 +7,7 @@ $yellow: #CFDB76;
 $pink: #DB76B8;
 
 .filler-label{
-  height: 5%;
+  height: 20px;
   flex: 2;
 }
 
@@ -16,7 +16,7 @@ $pink: #DB76B8;
 }
 
 .channel-name-header{
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .channel-label-header{
@@ -25,10 +25,10 @@ $pink: #DB76B8;
 }
 
 .channel-box-message-box{
-  margin-left: 20%;
-  margin-top: 15%;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 20px;
 }
-
 
 .channel-box-icon-red {
   color: $red;
@@ -67,4 +67,40 @@ $pink: #DB76B8;
 }
 .channel-box-label-pink {
   background-color: $pink;
+}
+
+
+@mixin channelBox($color){
+    border: 3px solid $color;
+    height: 250px;
+    width: 250px;
+    background-color: transparent;
+    // margin-bottom: 25px;
+
+}
+
+
+.channel-box-red {
+  @include channelBox(#DB7676);
+
+}
+.channel-box-blue {
+  @include channelBox(#7682DB);
+
+}
+.channel-box-orange {
+  @include channelBox(#DBA476);
+
+}
+.channel-box-green {
+  @include channelBox(#76DBAC);
+
+}
+.channel-box-yellow {
+  @include channelBox(#CFDB76);
+
+}
+.channel-box-pink {
+  @include channelBox(#DB76B8);
+
 }
