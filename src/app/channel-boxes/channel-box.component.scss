@@ -17,6 +17,7 @@ $pink: #DB76B8;
 
 .channel-name-header{
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .channel-label-header{
@@ -25,7 +26,8 @@ $pink: #DB76B8;
 }
 
 .channel-box-message-box{
-  margin-left: 30px;
+  margin-left: 40px;
+  //30px for margin left when 250 x 250
   margin-right: 10px;
   margin-top: 20px;
 }
@@ -71,36 +73,35 @@ $pink: #DB76B8;
 
 
 @mixin channelBox($color){
-    border: 3px solid $color;
-    height: 250px;
-    width: 250px;
+    border: 5px solid $color;
+    height: 275px;
+    width: 275px;
     background-color: transparent;
     // margin-bottom: 25px;
 
 }
 
-
 .channel-box-red {
-  @include channelBox(#DB7676);
+  @include channelBox($red);
 
 }
 .channel-box-blue {
-  @include channelBox(#7682DB);
+  @include channelBox($blue);
 
 }
 .channel-box-orange {
-  @include channelBox(#DBA476);
+  @include channelBox($orange);
 
 }
 .channel-box-green {
-  @include channelBox(#76DBAC);
+  @include channelBox($green);
 
 }
 .channel-box-yellow {
-  @include channelBox(#CFDB76);
+  @include channelBox($yellow);
 
 }
 .channel-box-pink {
-  @include channelBox(#DB76B8);
+  @include channelBox($pink);
 
 }

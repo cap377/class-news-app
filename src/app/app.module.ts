@@ -14,8 +14,8 @@ const appRoutes: Routes = [
   {path: 'service-test', component: ServiceTestComponent}
 ];
 
-import {ChannelBoxComponent} from './channelboxes/channel-box.component';
-import {ChannelDisplayComponent} from './channelboxes/channel-display.component';
+import {ChannelBoxComponent} from './channel-boxes/channel-box.component';
+import {ChannelDisplayComponent} from './channel-boxes/channel-display.component';
 
 import { MessageBoxComponent } from './message-box/message-box.component';
 
@@ -26,7 +26,7 @@ import {ChannelService} from './channel.service';
 import {HomeComponent} from './home.component';
 
 import { MessageListComponent } from './message-list/message-list.component';
-import {ShufflePipe} from './ChannelBoxes/ShufflePipe';
+
 
 @NgModule({
   declarations: [
@@ -39,14 +39,13 @@ import {ShufflePipe} from './ChannelBoxes/ShufflePipe';
     ChannelBoxComponent,
     ChannelDisplayComponent,
     HomeComponent,
-    MessageListComponent,
-    ShufflePipe
+    MessageListComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     SlackService,
