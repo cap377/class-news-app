@@ -1,11 +1,11 @@
 <div *ngIf="channel">
-  <div class="channel-feed-container">
+  <div class="channel-feed-container" (click)="listAllMessages(this)">
     <div class="channel-feed-header">
       <div [ngClass]="iconColor" class="channel-feed-header-icon">
         #
       </div>
       <div class="channel-feed-header-name">
-        {{name}}
+        {{name.toUpperCase()}}
       </div>
       <div [ngClass] = "backgroundColor" class="channel-feed-header-posts">
         {{numRecentMessages}} recent posts

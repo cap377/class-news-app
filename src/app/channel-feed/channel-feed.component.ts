@@ -18,61 +18,40 @@ export class ChannelFeedComponent implements OnInit
   iconColor:string = "channel-feed-icon-";
   backgroundColor:string = "channel-feed-";
   messages:any[];
-  //private _data = new BehaviorSubject<Post[]>([]);
+
   constructor(private _ngZone: NgZone)
   {
-    // if(this.channel)
-    // {
-    //   this.name = this.channel.name;
-    //   this.numRecentMessages = this.channel.recentPosts;
-    //   this.messages = this.channel.messages;
-    // }
 
   }
 
   ngOnInit()
   {
-    // this.name = this.channel.name;
-    // this.numRecentMessages = this.channel.recentCount;
-    // this.messages = this.channel.messages;
-    // this.backgroundColor += this.channel.color;
-    // this.iconColor += this.channel.color;
 
-    // let classIndex:number = Math.floor(Math.random() * 6);
-    // this.backgroundColor =  this.potentialBoxColors[classIndex];
-    // this.iconColor =  this.potentialIconColors[classIndex];i
-
-    // this._data
-
-    // add this line
-    // listen to data as long as groupPosts is undefined or null
-    // Unsubscribe once groupPosts has value
-
-    // .takeWhile(() => !this.groupPosts)
-    // .subscribe(x => {
-    //     this.groupPosts = this.groupByCategory(this.data);
-    // });
   }
 
   ngOnChanges(changes: SimpleChanges)
   {
-    // if(changes['channel'])
-    // {
-    //   this._ngZone.run(() => {
-    //     this.name = this.channel.name;
-    //     this.numRecentMessages = this.channel.recentCount;
-    //     this.messages = this.channel.messages;
-    //     this.backgroundColor += this.channel.color;
-    //     this.iconColor += this.channel.color;
-    //   });
-    //
-    // }
+
     this.name = this.channel.name;
     this.numRecentMessages = this.channel.recentCount;
     this.messages = this.channel.messages;
     this.backgroundColor += this.channel.color;
     this.iconColor += this.channel.color;
-    console.log(this.channel);
   }
+
+  // listAllMessages(event){
+  //   let a = event.target;
+  //   let b = event.currentTarget;
+  //   console.log(a);
+  //   console.log(b);
+  //   console.log(event);
+  //   let classArray:any = new Array<any>();
+  //   classArray = document.getElementsByClassName('channel-feed-container');
+  //   for (let item of classArray){
+  //     if (item != event){
+  //     item.style.display = 'none';
+  //   }}
+  //
+  // }
 
 }

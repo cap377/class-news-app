@@ -1,5 +1,4 @@
 <div>
-  
   <ul>
     <li *ngFor="let member of members, index as i" (click)="onSelect(member)">
       <span>
@@ -14,7 +13,7 @@
     </li>
   </ul>
 </div>
-<div [ngClass]="{'grey-sheet':selectedMember}">
+<div [ngClass]="{'grey-sheet':selectedMember}" (click)="removeSelected()">
 </div>
 <div *ngIf="selectedMember">
   <div class="modal">
@@ -27,7 +26,6 @@
     <div class="member-online-background">
       <img src="../../assets/online-logo.png" />
     </div>
-    <button class="exit-button" type="button" (click)="removeSelected()">X</button>
     <div class="member-detail-white-box">
 
     </div>

@@ -61,7 +61,13 @@
 
 .messageDetailsTextDiv {
   font-size: 18px;
+  white-space: normal;
   color: white;
+  height: 180px;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+
 }
 
 .modal {

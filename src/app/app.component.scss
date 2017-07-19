@@ -7,25 +7,41 @@ body {
   top: 0;
   left: 0;
 }
-.purple-rectangle {
-  background-color: #7682DB;
-  margin-top: -152px;
-  width: 90%;
-  height: 110px;
-  float: right;
-  border-bottom: solid white 1px;
-}
-h1 {
-  position: absolute;
-  display: inline;
-  margin: 0;
-  margin-top: 50px;
-  padding: 0;
+.logo-title {
+  font-weight: bold;
+  background-color: #3B3B3B;
+  width: 100%;
+  max-height: 200px;
   font-size: 48px;
-}
-img {
-  margin-top: 20px;
-  width: 80px;
+  padding-top: 20px;
+  .logo-title-ace-text {
+    margin-left: -15px;
+    min-height: 100px;
+    height: auto;
+    display: inline-block;
+    max-width: 100px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    margin-top: -20px;
+  }
+  .logo-title-news-text {
+    min-height: 100px;
+    vertical-align: middle;
+    height: auto;
+    display: inline-block;
+    //margin-top: 7%;
+    padding-left: 5px;
+    background-color: #7682DB;
+    width: calc(100% - 225px);
+    margin-bottom: 2px;
+    margin-top: -20px;
+  }
+  img {
+    margin-left: 29.3px;
+    vertical-align:text-bottom;
+    min-height: 100px;
+    display: inline-block;
+  }
 }
 nav {
   text-align: center;
@@ -35,6 +51,7 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
   ul {
+    margin-top: -2px;
     padding-top: 10px;
     padding-left: 0;
     list-style: none;
