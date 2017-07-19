@@ -1,15 +1,12 @@
-<!-- <div [ngClass] ="yellow" (click) = 'switchClass()'> -->
-<div>
-  <div style="display:flex">
-    <div>
-      <label style="display:inline; flex: 1; margin-right: 5px;">
-        <span [ngClass]="channel.name+'-pound'" style="margin-left: 2px;">#</span>
-        <span style="font-size: 10px;">{{channel.name}}</span>
-      </label>
-    </div>
-    <label [ngClass]="channel.name+'-empty-label'" style="float: right; height: 5%; flex: 2">&nbsp;</label>
-  </div>
+<div style="display:flex">
   <div>
-    <app-message-box></app-message-box>
+    <label class="channel-label-header">
+      <span [ngClass]="'channel-box-icon-' + channel.color" class="channel-icon">#</span>
+      <span class="channel-name-header">{{channel.name}}</span>
+    </label>
   </div>
+  <label [ngClass]="'channel-box-label-'+ channel.color" class="filler-label">&nbsp;</label>
+</div>
+<div class="channel-box-message-box">
+  <app-message-box [messageObj]="channel.messages[0]"></app-message-box>
 </div>
