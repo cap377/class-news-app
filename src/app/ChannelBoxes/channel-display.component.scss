@@ -11,10 +11,16 @@ $sixthColor: yellow;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+
+  channel-box{
+    width: 20%;
+    height: 300px;
+
+  }
 }
 
-channel-box{
-  flex:1;
+.app-channel-feed-div{
+  margin-bottom: 5%;
 }
 
 @mixin channelBox($color){

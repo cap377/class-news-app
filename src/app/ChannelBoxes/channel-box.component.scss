@@ -6,6 +6,29 @@ $green: #76DBAC;
 $yellow: #CFDB76;
 $pink: #DB76B8;
 
+.filler-label{
+  height: 5%;
+  flex: 2;
+}
+
+.channel-icon{
+  margin: 2px;
+}
+
+.channel-name-header{
+  font-size: 10px;
+}
+
+.channel-label-header{
+  flex: 1;
+  margin-right: 5px;
+}
+
+.channel-box-message-box{
+  margin-left: 20%;
+  margin-top: 15%;
+}
+
 
 .channel-box-icon-red {
   color: $red;

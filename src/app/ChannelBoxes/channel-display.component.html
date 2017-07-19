@@ -1,32 +1,8 @@
 <div>
-  <div style="width:100%">
+  <div class="app-channel-feed-div">
     <app-channel-feed [channel]="channelData[0]"></app-channel-feed>
   </div>
   <div class="box-container">
     <channel-box *ngFor="let channel of channelData" [channel]="channel" [ngClass] = "('channel-box-' + channel.color)"></channel-box>
   </div>
-  <!-- <channel-box *ngFor="let channel of channels" [ngClass] = "channel.name + '-box-'"></channel-box> -->
-
 </div>
-
-
-<!-- <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-  <span class="badge">{{hero.id}}</span> {{hero.name}}
-
-</li> -->
-
-<!-- <div *ngIf="hero">
-  <h2>{{hero.name}} details!</h2>
-  <div>
-    <label>id: </label>
-    {{hero.id}}
-  </div>
-  <div>
-  {{channelInfo.name}}
-    <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name" />
-  </div>
-  <button (click)="goBack()">Back</button>
-  <button (click)="save()">Save</button>
-
-</div> -->
