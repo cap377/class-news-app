@@ -14,15 +14,6 @@ export class ChannelBoxComponent implements OnInit {
   yellow: string = "";
 
   @Input() channel: any;
-  // @Input() hero: Hero;
-
-  switchClass(){
-    this.yellow = "channel-box";
-  }
-  // hero: Hero = {
-  //   id: 1,
-  //   name: 'Windstorm'
-  // };
 
   ngOnInit(): void{
     //

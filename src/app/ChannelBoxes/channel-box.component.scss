@@ -1,130 +1,47 @@
 
-$firstColor: black;
-$secondColor: blue;
-$thirdColor: red;
-$fourthColor: green;
-$fifthColor: orange;
-$sixthColor: yellow;
+$red: #DB7676;
+$blue: #7682DB;
+$orange: #DBA476;
+$green: #76DBAC;
+$yellow: #CFDB76;
+$pink: #DB76B8;
 
 
 .channel-box-icon-red {
-  color: #DB7676;
+  color: $red;
 }
 .channel-box-icon-blue {
-  color: #7682DB;
+  color: $blue;
 }
 .channel-box-icon-orange {
-  color: #DBA476;
+  color: $orange;
 }
 .channel-box-icon-green {
-  color: #76DBAC;
+  color: $green;
 }
 .channel-box-icon-yellow {
-  color: #CFDB76;
+  color: $yellow;
 }
 .channel-box-icon-pink {
-  color: #DB76B8;
+  color: $pink;
 }
 
 
 .channel-box-label-red {
-  background-color: #DB7676;
+  background-color: $red;
 }
 .channel-box-label-blue {
-  background-color: #7682DB;
+  background-color: $blue;
 }
 .channel-box-label-orange {
-  background-color: #DBA476;
+  background-color: $orange;
 }
 .channel-box-label-green {
-  background-color: #76DBAC;
+  background-color: $green;
 }
 .channel-box-label-yellow {
-  background-color: #CFDB76;
+  background-color: $yellow;
 }
 .channel-box-label-pink {
-  background-color: #DB76B8;
+  background-color: $pink;
 }
-
-
-
-.General-empty-label{
-  background-color: $firstColor;
-}
-
-.General-pound{
-  color: $firstColor;
-}
-
-.Introductions-empty-label{
-  background-color: $secondColor;
-}
-
-.Introductions-pound{
-  color: $secondColor;
-}
-
-.Random-empty-label{
-  background-color: $thirdColor;
-}
-
-.Random-pound{
-  color: $thirdColor;
-}
-
-.Relocation-empty-label{
-  background-color: $fourthColor;
-}
-
-.Relocation-pound{
-  color: $fourthColor;
-}
-
-.Speakers-empty-label{
-  background-color: $fifthColor;
-}
-
-.Speakers-pound{
-  color: $fifthColor;
-}
-
-.Announcements-empty-label{
-  background-color: $sixthColor;
-}
-
-.Announcements-pound{
-  color: $sixthColor;
-}
-
-
-// @mixin channelBox($color){
-//     border: 3px solid $color;
-//     border-top: 10px;
-//     height: 250px;
-//     width: 80%;
-//     background-color: transparent;
-// }
-//
-// .General-box{
-//   @include channelBox($firstColor);
-// }
-//
-// .Introductions-box{
-//   @include channelBox($secondColor);
-// }
-//
-// .Random-box{
-//   @include channelBox($thirdColor);
-// }
-//
-// .Relocation-box{
-//   @include channelBox($fourthColor);
-// }
-//
-// .Speakers-box{
-//   @include channelBox($fifthColor);
-// }
-//
-// .Announcements-box{
-//   @include channelBox($sixthColor);
-// }

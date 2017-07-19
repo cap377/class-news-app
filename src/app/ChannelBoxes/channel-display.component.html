@@ -1,14 +1,11 @@
-<div style="width=100% display: inline-block">
-
-  <div class="box-container" >
-    <!-- <channel-box *ngFor="let channel of channels"></channel-box> -->
-    <channel-box *ngFor="let channel of channels" [channel]="channel" [ngClass] = "(channel.name + '-box')"></channel-box>
-    <!-- <channel-box *ngFor="let channel of channels" [ngClass] = "channel.name + '-box-'"></channel-box> -->
-
-
+<div>
+  <div style="width:100%">
+    <app-channel-feed [channel]="channelData[0]"></app-channel-feed>
   </div>
-
-
+  <div class="box-container">
+    <channel-box *ngFor="let channel of channelData" [channel]="channel" [ngClass] = "('channel-box-' + channel.color)"></channel-box>
+  </div>
+  <!-- <channel-box *ngFor="let channel of channels" [ngClass] = "channel.name + '-box-'"></channel-box> -->
 
 </div>
 

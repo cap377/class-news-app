@@ -13,6 +13,10 @@ $sixthColor: yellow;
   justify-content: space-around;
 }
 
+channel-box{
+  flex:1;
+}
+
 @mixin channelBox($color){
     border: 3px solid $color;
     height: 250px;
