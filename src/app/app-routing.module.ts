@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'members-page',  component: MembersPageComponent },
   { path: 'message-box', component: MessageBoxComponent },
-  { path: 'message-list/:channelID', component: MessageListComponent},
+  { path: 'message-list/:channelIndex', component: MessageListComponent},
   { path: 'channels', component: ChannelsComponent},
   { path: 'home', component: HomeComponent}
 ];

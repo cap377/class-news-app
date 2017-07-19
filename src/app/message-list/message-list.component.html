@@ -1,19 +1,21 @@
-<div *ngIf="channel">
-  <div class="channel-feed-container">
-    <div class="channel-feed-header">
-      <div [ngClass]="iconColor" class="channel-feed-header-icon">
-        #
+<div *ngIf="channelDataArray[usedIndex]">
+  <div *ngIf="iconColor">
+    <div class="channel-feed-container">
+      <div class="channel-feed-header">
+        <div [ngClass]="iconColor" class="channel-feed-header-icon">
+          #
+        </div>
+        <div class="channel-feed-header-name">
+          {{channelDataArray[usedIndex].name.toUpperCase()}}
+        </div>
+        <div [ngClass]="backgroundColor" class="channel-feed-header-posts">
+          {{channelDataArray[usedIndex].recentCount}} recent posts
+        </div>
       </div>
-      <div class="channel-feed-header-name">
-        {{arrayTest[0].name.toUpperCase()}}
-      </div>
-      <div [ngClass] = "backgroundColor" class="channel-feed-header-posts">
-        {{numRecentMessages}} recent posts
-      </div>
-    </div>
-    <div class="channel-feed-messages">
-      <div class="message-box-wrapper" *ngFor="let message of channel.messages">
-        <app-message-box [messageObj]="message"></app-message-box>
+      <div class="channel-feed-messages">
+        <div class="message-box-wrapper" *ngFor="let message of channelDataArray[usedIndex].messages">
+          <app-message-box [messageObj]="message"></app-message-box>
+        </div>
       </div>
     </div>
   </div>

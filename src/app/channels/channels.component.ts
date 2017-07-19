@@ -23,10 +23,11 @@ export class ChannelsComponent implements OnInit
    });
   }
 
-  sendChannelInformation(channel:any){
-    //console.log("Channel",channel);
+  sendChannelInformation(channelIndex:number){
+    console.log("Channel",channelIndex);
     //@output
-    this.router.navigate(['/message-list',channel.id]);
+
+    this.router.navigate(['/message-list',channelIndex]);
   }
 
 
